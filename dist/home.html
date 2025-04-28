@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crafter - Home Page</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="toggle__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__branding">
+            <img src="./img/header-logo.png" alt="crafter-logo" />
+          </div>
+          <ul class="header__navd">
+            <li><a href="">HOME</a></li>
+            <li><a href="">PAGES</a></li>
+            <li><a href="">PRICING</a></li>
+            <li><a href="">SPEAKERS</a></li>
+            <li><a href="">SPONSORS</a></li>
+            <li><a href="">CONTACTS</a></li>
+          </ul>
+          <ul class="header__navm">
+            <li><a href="">HOME</a></li>
+            <li><a href="">PAGES</a></li>
+            <li><a href="">PRICING</a></li>
+            <li><a href="">SPEAKERS</a></li>
+            <li><a href="">SPONSORS</a></li>
+            <li><a href="">CONTACTS</a></li>
+            <div class="header__ctam">
+              <a href="" class="btn bg--dilaw">BUY TICKETS</a>
+            </div>
+          </ul>
+          <div class="header__cta">
+            <a href="" class="btn bg--dilaw">BUY TICKETS</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="homeBanner font-poppins">
+      <div class="container">
+        <div class="homeBanner__wrapper">
+          <div class="homeBanner__slider">
+            <div class="homeBannner__slider--item group">
+              <div class="max-w-[6rem] text-center">
+                <i
+                  class="fa-sharp fa-solid fa-play text-dilaw text-[1.8rem] group-hover:text-gblue"
+                ></i>
+                <h3 class="italic font-bold text-[22px] text-tgray group-hover:text-light text-left">
+                  What is Eventy?
+                </h3>
+              </div>
+              <div>
+                <p>JULY 05-09 2021, LOS ANGELES, CA</p>
+                <span class="block w-[5rem] h-[0.1rem] bg-black"></span>
+                <h1>
+                  TALK ABOUT YOUR
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-gpink to-gorange"
+                    >IDEA</span
+                  >
+                </h1>
+                <a href="" class="btn bg--asul">BUY TICKETS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module">
+      //   import { tns } from "./src/tiny-slider.js";
+
+      var slider = tns({
+        container: ".my-slider",
+        items: 3,
+        slideBy: "page",
+        autoplay: true,
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
