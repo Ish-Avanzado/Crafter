@@ -9,6 +9,8 @@ module.exports = {
       backgroundImage: {
         slideB1: "url(../dist/img/swiper-slide-1.jpg)",
         slideB2: "url(../dist/img/swiper-slide-2.jpg)",
+        blackOverlay:
+          "linear-gradient(to bottom, rgba(225,225,225,225) 0%, rgba(225,225,225,0.9) 100%)",
       },
       colors: {
         primary: "#444141",

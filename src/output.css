@@ -599,11 +599,28 @@ video {
 }
 
 .header{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(68 65 65 / var(--tw-bg-opacity, 1));
   font-family: Poppins, san-serif;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 1024px){
+  .header{
+    background-color: transparent;
+  }
+
+  .header.bg{
+    --tw-bg-opacity: 1;
+    background-color: rgb(68 65 65 / var(--tw-bg-opacity, 1));
+  }
 }
 
 .header .header__wrapper{
@@ -651,10 +668,10 @@ video {
 
 .header .header__navm{
   position: absolute;
-  top: 4.8rem;
+  top: 4.7rem;
   left: -100rem;
   display: flex;
-  height: 100%;
+  height: 100rem;
   width: 50%;
   flex-direction: column;
   gap: 1rem;
@@ -663,7 +680,9 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 1.5rem;
-  font-weight: 100;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(184 184 184 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 1024px){
@@ -691,8 +710,8 @@ video {
 
 .header .header__ctam{
   position: absolute;
-  bottom: 28rem;
   left: -100rem;
+  top: 20rem;
   padding-left: 1.5rem;
 }
 
@@ -710,7 +729,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   transition-property: all;
-  transition-duration: 700ms;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -722,7 +741,12 @@ video {
 .header .toggle__menu.open span:first-child{
   width: 1rem;
   --tw-translate-y: 3px;
-  --tw-rotate: -225deg;
+  --tw-rotate: 135deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.header .toggle__menu.open span:nth-child(2){
+  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -733,6 +757,71 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+/* slider */
+
+.homeBanner__slider--nav li{
+  display: none;
+  font-size: 24px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1024px){
+  .homeBanner__slider--nav li{
+    display: block;
+  }
+}
+
+.homeBanner__slider--nav li.tns-nav-active{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.homeBanner__slider--nav span{
+  position: relative;
+  top: 17rem;
+  left: 45%;
+}
+
+@media (min-width: 1024px){
+  .homeBanner__slider--nav span{
+    display: none;
+  }
+}
+
+.homeBanner__slider--nav span:last-child{
+  margin-left: 1rem;
+}
+
+.homeBanner__slider--nav span.tns-nav-active{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.top-\[20rem\]{
+  top: 20rem;
+}
+
+.m-auto{
+  margin: auto;
+}
+
+.ml-\[4rem\]{
+  margin-left: 4rem;
+}
+
+.mt-\[7rem\]{
+  margin-top: 7rem;
+}
+
 .block{
   display: block;
 }
@@ -741,21 +830,45 @@ video {
   height: 0.1rem;
 }
 
-.w-\[5rem\]{
-  width: 5rem;
+.h-\[40rem\]{
+  height: 40rem;
+}
+
+.w-\[100\%\]{
+  width: 100%;
+}
+
+.w-\[6rem\]{
+  width: 6rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-\[6rem\]{
   max-width: 6rem;
 }
 
-.bg-black{
+.max-w-\[98rem\]{
+  max-width: 98rem;
+}
+
+.bg-light{
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-slideB1{
+  background-image: url(../dist/img/swiper-slide-1.jpg);
+}
+
+.bg-slideB2{
+  background-image: url(../dist/img/swiper-slide-2.jpg);
 }
 
 .from-gpink{
@@ -768,9 +881,36 @@ video {
   --tw-gradient-to: #fc9867 var(--tw-gradient-to-position);
 }
 
+.bg-cover{
+  background-size: cover;
+}
+
 .bg-clip-text{
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+.px-\[1\.5rem\]{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-\[1rem\]{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-\[5rem\]{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.pt-\[3rem\]{
+  padding-top: 3rem;
 }
 
 .text-left{
@@ -789,12 +929,28 @@ video {
   font-size: 1.8rem;
 }
 
+.text-\[18px\]{
+  font-size: 18px;
+}
+
 .text-\[22px\]{
   font-size: 22px;
 }
 
+.text-\[70px\]{
+  font-size: 70px;
+}
+
+.text-\[clamp\(28px\2c 4vw\2c 50px\)\]{
+  font-size: clamp(28px,4vw,50px);
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.font-extrabold{
+  font-weight: 800;
 }
 
 .italic{
@@ -804,6 +960,11 @@ video {
 .text-dilaw{
   --tw-text-opacity: 1;
   color: rgb(255 213 65 / var(--tw-text-opacity, 1));
+}
+
+.text-light{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .text-tgray{
@@ -849,4 +1010,48 @@ video {
 .group:hover .group-hover\:text-light{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px){
+  .md\:text-\[100px\]{
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:absolute{
+    position: absolute;
+  }
+
+  .lg\:relative{
+    position: relative;
+  }
+
+  .lg\:left-\[20rem\]{
+    left: 20rem;
+  }
+
+  .lg\:right-\[25rem\]{
+    right: 25rem;
+  }
+
+  .lg\:top-\[30rem\]{
+    top: 30rem;
+  }
+
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:h-\[45rem\]{
+    height: 45rem;
+  }
+
+  .lg\:justify-between{
+    justify-content: space-between;
+  }
+
+  .lg\:text-\[160px\]{
+    font-size: 160px;
+  }
 }

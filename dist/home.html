@@ -55,45 +55,118 @@
       </div>
     </header>
 
-    <section class="homeBanner font-poppins">
-      <div class="container">
-        <div class="homeBanner__wrapper">
-          <div class="homeBanner__slider">
-            <div class="homeBannner__slider--item group">
-              <div class="max-w-[6rem] text-center">
-                <i
-                  class="fa-sharp fa-solid fa-play text-dilaw text-[1.8rem] group-hover:text-gblue"
-                ></i>
-                <h3 class="italic font-bold text-[22px] text-tgray group-hover:text-light text-left">
-                  What is Eventy?
-                </h3>
-              </div>
+    <section class="homeBanner font-poppins text-light">
+      <div class="homeBanner__wrapper">
+        <div class="homeBanner__slider">
+          <div
+            class="homeBannner__slider--item relative bg-slideB1 bg-cover bg-no-repeat w-[100%] h-[40rem] lg:h-[45rem] py-[5rem]"
+          >
+            <div
+              class="max-w-[98rem] w-full m-auto px-[1.5rem] lg:relative lg:left-[20rem] mt-[7rem]"
+            >
+              <p class="text-[18px] py-[1rem]">
+                JULY 05-09 2021, LOS ANGELES, CA
+              </p>
+              <span class="block w-[6rem] h-[0.1rem] bg-light"></span>
+              <h2 class="text-[clamp(28px,4vw,50px)] font-extrabold">
+                EVENTY UNITIES
+              </h2>
+              <h1>
+                <span
+                  class="text-transparent text-[70px] md:text-[100px] lg:text-[160px] font-extrabold bg-clip-text bg-gradient-to-r from-gpink to-gorange"
+                  >PEOPLE</span
+                >
+              </h1>
               <div>
-                <p>JULY 05-09 2021, LOS ANGELES, CA</p>
-                <span class="block w-[5rem] h-[0.1rem] bg-black"></span>
-                <h1>
-                  TALK ABOUT YOUR
-                  <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-gpink to-gorange"
-                    >IDEA</span
-                  >
-                </h1>
                 <a href="" class="btn bg--asul">BUY TICKETS</a>
               </div>
             </div>
           </div>
+          <div
+            class="homeBannner__slider--item relative bg-slideB2 bg-cover bg-no-repeat w-[100%] h-[40rem] lg:h-[45rem] py-[5rem]"
+          >
+            <div
+              class="lg:absolute lg:top-[30rem] lg:right-[25rem] max-w-[6rem] text-center group ml-[4rem] pt-[3rem]"
+            >
+              <i
+                class="fa-sharp fa-solid fa-play text-dilaw text-[1.8rem] group-hover:text-gblue"
+              ></i>
+              <h3
+                class="italic font-bold text-[22px] text-tgray group-hover:text-light text-left"
+              >
+                What is Eventy?
+              </h3>
+            </div>
+            <div
+              class="max-w-[98rem] w-full m-auto px-[1.5rem] lg:relative lg:left-[20rem]"
+            >
+              <p class="text-[18px] py-[1rem]">
+                JULY 05-09 2021, LOS ANGELES, CA
+              </p>
+              <span class="block w-[6rem] h-[0.1rem] bg-light"></span>
+              <h2 class="text-[clamp(28px,4vw,50px)] font-extrabold">
+                TALK ABOUT YOUR
+              </h2>
+              <h1>
+                <span
+                  class="text-transparent text-[70px] md:text-[100px] lg:text-[160px] font-extrabold bg-clip-text bg-gradient-to-r from-gpink to-gorange"
+                  >IDEA</span
+                >
+              </h1>
+              <a href="" class="btn bg--asul">BUY TICKETS</a>
+            </div>
+          </div>
+        </div>
+        <ul
+          class="homeBanner__slider--nav text-light max-w-[98rem] w-full m-auto px-[1.5rem] lg:flex lg:justify-between absolute top-[20rem]"
+        >
+          <li><i class="fa-sharp fa-solid fa-arrow-left"></i></li>
+          <li><i class="fa-sharp fa-solid fa-arrow-right"></i></li>
+          <span><i class="fa-solid fa-circle"></i></span>
+          <span><i class="fa-solid fa-circle"></i></span>
+        </ul>
+      </div>
+    </section>
+
+    <section></section>
+
+    <section class="homeEventy">
+      <div class="container">
+        <div class="homeEventy__wrapper">
+          <div class="homeEventy__text">
+            <h3>Welcome to Eventy</h3>
+            <div>
+              <div class="homeEventy__profile">
+                <img src="./img/user-1-129x152.jpg" alt="Alice-Parker-Photo">
+                <h4>Alice Parker</h4>
+                <p>FOUNDER</p>
+              </div>
+              <div class="homeEventy__info">
+                <p>Our event is a place where the best minds of the generation meet and discuss the cutting-edge business ideas, issues, and solutions. Join the community of leaders today!</p>
+                <a href="" class="btn">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="homeEventy__image">
+            <img src="./img/home-1-599x376.jpg" alt="">
+          </div>
         </div>
       </div>
     </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="module">
       //   import { tns } from "./src/tiny-slider.js";
 
       var slider = tns({
-        container: ".my-slider",
-        items: 3,
+        container: ".homeBanner__slider",
+        items: 1,
         slideBy: "page",
-        autoplay: true,
+        autoplay: false,
+        autoplayButtonOutput: 0,
+        controls: 0,
+        navContainer: ".homeBanner__slider--nav",
+        navAsThumbnails: true,
       });
     </script>
     <script src="./script.js"></script>

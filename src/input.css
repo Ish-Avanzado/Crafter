@@ -12,7 +12,10 @@
     @apply max-w-[98rem] w-full m-auto px-[1.5rem];
   }
   .header {
-    @apply bg-primary text-light font-poppins ;
+    @apply lg:bg-transparent z-10 shadow-xl fixed w-[100%] bg-primary text-light font-poppins;
+  }
+  .header.bg {
+    @apply lg:bg-primary;
   }
   .header .header__wrapper {
     @apply flex flex-row gap-[1rem] items-center py-[1rem] lg:flex lg:justify-between lg:items-center;
@@ -27,31 +30,52 @@
     @apply hidden lg:flex lg:justify-between lg:gap-[2rem];
   }
   .header .header__navm {
-    @apply lg:hidden bg-primary absolute top-[4.8rem] h-[100%] left-[-100rem] w-[50%] flex flex-col gap-[1rem] font-thin pl-[1.5rem]  py-[2rem];
+    @apply lg:hidden bg-primary absolute top-[4.7rem] h-[100rem] left-[-100rem] w-[50%] flex flex-col gap-[1rem] font-light text-tgray pl-[1.5rem]  py-[2rem];
   }
   .header .header__navm.open {
     @apply left-0 transition-all duration-700 ease-in-out;
   }
   .header .header__cta {
-    @apply hidden lg:block
+    @apply hidden lg:block;
   }
   .header .header__ctam {
-    @apply absolute bottom-[28rem] left-[-100rem] pl-[1.5rem];
+    @apply absolute left-[-100rem] pl-[1.5rem] top-[20rem];
   }
   .header .header__ctam.open {
     @apply left-[0] transition-all duration-700 ease-in-out;
   }
   .header .toggle__menu span {
-    @apply block bg-light w-[2.5rem] h-[0.1rem] transition-all duration-700 ease-in-out;
+    @apply block bg-light w-[2.5rem] h-[0.1rem] transition-all duration-500 ease-in-out;
   }
   .header .toggle__menu span:nth-child(2) {
     @apply my-[0.5rem];
   }
   .header .toggle__menu.open span:first-child {
-    @apply w-[1rem] transform translate-y-[3px] rotate-[-225deg];
+    @apply w-[1rem] transform translate-y-[3px] rotate-[135deg];
   }
+  .header .toggle__menu.open span:nth-child(2) {
+    @apply rotate-[180deg];
+  }
+
   .header .toggle__menu.open span:last-child {
     @apply w-[1rem] transform translate-y-[-3px] rotate-[225deg];
+  }
+
+  /* slider */
+  .homeBanner__slider--nav li {
+    @apply text-light lg:block hidden text-[24px] ;
+  }
+  .homeBanner__slider--nav li.tns-nav-active {
+    @apply text-gray-500;
+  }
+  .homeBanner__slider--nav span {
+    @apply lg:hidden relative top-[17rem] left-[45%];
+  }
+  .homeBanner__slider--nav span:last-child {
+    @apply ml-[1rem];
+  }
+  .homeBanner__slider--nav span.tns-nav-active {
+    @apply text-gray-500;
   }
 }
 @layer utilities {
@@ -62,6 +86,6 @@
     @apply bg-dilaw rounded-sm;
   }
   .btn.bg--asul {
-    @apply bg-gradient-to-r from-gpurple to-gblue rounded-sm  
+    @apply bg-gradient-to-r from-gpurple to-gblue rounded-sm;
   }
 }

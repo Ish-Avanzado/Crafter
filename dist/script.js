@@ -6,3 +6,13 @@ burger.addEventListener("click", () => {
     hnav.classList.toggle("open");
     cta.classList.toggle("open");
 });
+
+const hColor = document.querySelector(".header");
+window.addEventListener("scroll", () => {
+  window.console.log(scrollY);
+  if (window.scrollY >= 1) {
+    hColor.classList.add("bg");
+  } else {
+    hColor.classList.remove("bg");
+  }
+});
