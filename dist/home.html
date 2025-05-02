@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container max-w-[98rem] w-full m-auto px-[1.5rem]">
         <div class="header__wrapper">
           <div class="toggle__menu">
             <span></span>
@@ -59,7 +59,7 @@
       <div class="homeBanner__wrapper">
         <div class="homeBanner__slider">
           <div
-            class="homeBannner__slider--item relative bg-slideB1 bg-cover bg-no-repeat w-[100%] h-[40rem] lg:h-[45rem] py-[5rem]"
+            class="homeBannner__slider--item relative bg-slideB1 bg-cover bg-no-repeat w-[100%] h-[40rem] lg:h-[60rem] py-[5rem]"
           >
             <div
               class="max-w-[98rem] w-full m-auto px-[1.5rem] lg:relative lg:left-[20rem] mt-[7rem]"
@@ -83,10 +83,10 @@
             </div>
           </div>
           <div
-            class="homeBannner__slider--item relative bg-slideB2 bg-cover bg-no-repeat w-[100%] h-[40rem] lg:h-[45rem] py-[5rem]"
+            class="homeBannner__slider--item relative bg-slideB2 bg-cover bg-no-repeat w-[100%] h-[40rem] lg:h-[60rem] py-[5rem]"
           >
             <div
-              class="lg:absolute lg:top-[30rem] lg:right-[25rem] max-w-[6rem] text-center group ml-[4rem] pt-[3rem]"
+              class="lg:absolute lg:top-[40rem] lg:right-[30rem] max-w-[6rem] text-center group ml-[4rem] pt-[3rem]"
             >
               <i
                 class="fa-sharp fa-solid fa-play text-dilaw text-[1.8rem] group-hover:text-gblue"
@@ -98,7 +98,7 @@
               </h3>
             </div>
             <div
-              class="max-w-[98rem] w-full m-auto px-[1.5rem] lg:relative lg:left-[20rem]"
+              class="max-w-[98rem] w-full m-auto px-[1.5rem] lg:relative lg:left-[20rem] mt-[7rem]"
             >
               <p class="text-[18px] py-[1rem]">
                 JULY 05-09 2021, LOS ANGELES, CA
@@ -117,38 +117,532 @@
             </div>
           </div>
         </div>
-        <ul
-          class="homeBanner__slider--nav text-light max-w-[98rem] w-full m-auto px-[1.5rem] lg:flex lg:justify-between absolute top-[20rem]"
-        >
-          <li><i class="fa-sharp fa-solid fa-arrow-left"></i></li>
-          <li><i class="fa-sharp fa-solid fa-arrow-right"></i></li>
-          <span><i class="fa-solid fa-circle"></i></span>
-          <span><i class="fa-solid fa-circle"></i></span>
-        </ul>
+        <div class="relative max-w-[90rem] w-full m-auto px-[1.5rem]">
+          <ul
+            class="homeBanner__slider--nav text-light max-w-[98rem] w-full m-auto px-[1.5rem] lg:flex lg:justify-between absolute top-[-30rem]"
+          >
+            <li><i class="fa-sharp fa-solid fa-arrow-left"></i></li>
+            <li><i class="fa-sharp fa-solid fa-arrow-right"></i></li>
+            <span><i class="fa-solid fa-circle"></i></span>
+            <span><i class="fa-solid fa-circle"></i></span>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section></section>
-
-    <section class="homeEventy">
+    <section
+      class="homeTimer bg-dotbg lg:bg-cover bg-cover bg-no-repeat w-[100%] lg:h-[30rem] h-[25rem] font-poppins"
+    >
       <div class="container">
-        <div class="homeEventy__wrapper">
+        <div
+          class="homeTimer__wrapper bg-light p-[3rem] rounded-b-3xl shadow-lg"
+        >
+          <h3 class="text-[clamp(24px,4vw,30px)] text-center">Hurry Up!</h3>
+          <p class="text-base text-center py-[2rem]">
+            Our event is starting soon so don’t waste your time and book your
+            tickets!
+          </p>
+          <div class="homeTimer__countDown">
+            <div class="homeTimer__time flex items-center gap-[1rem]">
+              <div>
+                <h3
+                  id="days"
+                  class="text-transparent bg-clip-text bg-gradient-to-r from-gpurple to-gblue"
+                >
+                  00
+                </h3>
+                <p>DAYS</p>
+              </div>
+              <ul>
+                <li><i class="fa-solid fa-circle"></i></li>
+                <li><i class="fa-solid fa-circle"></i></li>
+              </ul>
+            </div>
+            <div class="homeTimer__time flex items-center gap-[1rem]">
+              <div>
+                <h3
+                  id="hours"
+                  class="text-transparent bg-clip-text bg-gradient-to-r from-gpink to-gorange"
+                >
+                  00
+                </h3>
+                <p>HOURS</p>
+              </div>
+
+              <ul>
+                <li><i class="fa-solid fa-circle"></i></li>
+                <li><i class="fa-solid fa-circle"></i></li>
+              </ul>
+            </div>
+            <div class="homeTimer__time flex items-center gap-[1rem]">
+              <div>
+                <h3
+                  id="minutes"
+                  class="text-transparent bg-clip-text bg-gradient-to-r from-gpurple to-ggreen"
+                >
+                  00
+                </h3>
+                <p>MINUTES</p>
+              </div>
+
+              <ul>
+                <li><i class="fa-solid fa-circle"></i></li>
+                <li><i class="fa-solid fa-circle"></i></li>
+              </ul>
+            </div>
+            <div class="homeTimer__time">
+              <h3
+                id="seconds"
+                class="text-transparent bg-clip-text bg-gradient-to-r from-dilaw to-gpurple"
+              >
+                00
+              </h3>
+              <p>SECOND</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="homeEventy font-poppins py-[5rem]">
+      <div class="container">
+        <div class="homeEventy__wrapper lg:flex lg:justify-between">
           <div class="homeEventy__text">
-            <h3>Welcome to Eventy</h3>
-            <div>
-              <div class="homeEventy__profile">
-                <img src="./img/user-1-129x152.jpg" alt="Alice-Parker-Photo">
-                <h4>Alice Parker</h4>
-                <p>FOUNDER</p>
+            <h2 class="text-[clamp(26px,4vw,35px)] ml-[1rem]">
+              <span
+                class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:relative before:right-[1rem] before:bottom-[0.5rem]"
+              ></span>
+              Welcome to Eventy
+            </h2>
+            <div class="md:flex md:gap-[3rem] md:items-center">
+              <div
+                class="homeEventy__profile text-center max-w-[8rem] my-[1rem]"
+              >
+                <img
+                  src="./img/user-1-129x152.jpg"
+                  alt="Alice-Parker-Photo"
+                  class="w-[10rem] h-[10rem] object-cover"
+                />
+                <h4
+                  class="hover:text-gblue hover:duration-1000 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                >
+                  Alice Parker
+                </h4>
+                <small class="text-[12px] text-gray-500 font-extralight"
+                  >FOUNDER</small
+                >
               </div>
               <div class="homeEventy__info">
-                <p>Our event is a place where the best minds of the generation meet and discuss the cutting-edge business ideas, issues, and solutions. Join the community of leaders today!</p>
-                <a href="" class="btn">READ MORE</a>
+                <p
+                  class="text-gray-500 text-base font-extralight max-w-[25rem]"
+                >
+                  Our event is a place where the best minds of the generation
+                  meet and discuss the cutting-edge business ideas, issues, and
+                  solutions. Join the community of leaders today!
+                </p>
+                <a href="" class="btn bg--puti my-[2rem]">READ MORE</a>
               </div>
             </div>
           </div>
           <div class="homeEventy__image">
-            <img src="./img/home-1-599x376.jpg" alt="">
+            <img src="./img/home-1-599x376.jpg" alt="Eventy-photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="homeSpeakers bg-graybg bg-cover bg-no-repeat w-[100%] h-[100%] py-[5rem]"
+    >
+      <div class="container">
+        <div class="homeSpeakers__wrapper">
+          <div
+            class="flex flex-col lg:flex lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <h2 class="text-[clamp(26px,4vw,35px)] text-light relative">
+              <span
+                class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-0 before:top-[-1rem]"
+              ></span>
+              Speakers
+            </h2>
+            <p class="text-tgray py-[2rem] lg:max-w-[50rem]">
+              Our event gathers over 50 speakers. They include international
+              company owners and young entrepreneurs that revolutionized the way
+              of doing business. Here are some of them.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] place-items-center"
+          >
+            <div
+              class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
+            >
+              <img
+                src="./img/team-modern-1-375x290.jpg"
+                alt="john-clark-image"
+                class="w-[25rem] h-[20rem] object-cover brightness-50"
+              />
+              <ul
+                class="homeSpeakers__social absolute flex gap-[1rem] top-[8rem] left-[35%] text-light text-[30px]"
+              >
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+              </ul>
+              <div class="flex">
+                <span
+                  class="bg-light w-[20rem] h-[4rem] block skew-y-12 relative top-[-2rem]"
+                ></span
+                ><span
+                  class="bg-light w-[10rem] h-[3.5rem] block -skew-y-12 relative top-[-1rem]"
+                ></span>
+              </div>
+              <div class="mt-[-2rem] relative">
+                <h3 class="text-[24px]">John Clark</h3>
+                <p class="pb-[2rem]">CEO, ISTEP LTD.</p>
+              </div>
+            </div>
+            <div
+              class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
+            >
+              <img
+                src="./img/team-modern-2-375x290.jpg"
+                alt="helen-williams-image"
+                class="w-[25rem] h-[20rem] object-cover brightness-50"
+              />
+              <ul
+                class="homeSpeakers__social absolute flex gap-[1rem] top-[8rem] left-[35%] text-light text-[30px]"
+              >
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+              </ul>
+              <div class="flex">
+                <span
+                  class="bg-light w-[20rem] h-[4rem] block skew-y-12 relative top-[-2rem]"
+                ></span
+                ><span
+                  class="bg-light w-[10rem] h-[3.5rem] block -skew-y-12 relative top-[-1rem]"
+                ></span>
+              </div>
+              <div class="mt-[-2rem] relative">
+                <h3 class="text-[24px]">Helen Williams</h3>
+                <p class="pb-[2rem]">CFO, MOUNTAINCAST</p>
+              </div>
+            </div>
+
+            <div
+              class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
+            >
+              <img
+                src="./img/team-modern-3-375x290.jpg"
+                alt="peter-mcmillan-image"
+                class="w-[25rem] h-[20rem] object-cover brightness-50"
+              />
+              <ul
+                class="homeSpeakers__social absolute flex gap-[1rem] top-[8rem] left-[35%] text-light text-[30px]"
+              >
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+              </ul>
+              <div class="flex">
+                <span
+                  class="bg-light w-[20rem] h-[4rem] block skew-y-12 relative top-[-2rem]"
+                ></span
+                ><span
+                  class="bg-light w-[10rem] h-[3.5rem] block -skew-y-12 relative top-[-1rem]"
+                ></span>
+              </div>
+              <div class="mt-[-2rem] relative">
+                <h3 class="text-[24px]">Peter McMillan</h3>
+                <p class="pb-[2rem]">MANAGING DIRECTOR, LTP GROUP</p>
+              </div>
+            </div>
+            <div
+              class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
+            >
+              <img
+                src="./img/team-modern-4-375x290.jpg"
+                alt="jack-peterson-image"
+                class="w-[25rem] h-[20rem] object-cover brightness-50"
+              />
+              <ul
+                class="homeSpeakers__social absolute flex gap-[1rem] top-[8rem] left-[35%] text-light text-[30px]"
+              >
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+              </ul>
+              <div class="flex">
+                <span
+                  class="bg-light w-[20rem] h-[4rem] block skew-y-12 relative top-[-2rem]"
+                ></span
+                ><span
+                  class="bg-light w-[10rem] h-[3.5rem] block -skew-y-12 relative top-[-1rem]"
+                ></span>
+              </div>
+              <div class="mt-[-2rem] relative">
+                <h3 class="text-[24px]">Jack Peterson</h3>
+                <p class="pb-[2rem]">CTO, WILSON'S TECH</p>
+              </div>
+            </div>
+            <div
+              class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
+            >
+              <img
+                src="./img/team-modern-5-375x290.jpg"
+                alt="jane-smith-image"
+                class="w-[25rem] h-[20rem] object-cover brightness-50"
+              />
+              <ul
+                class="homeSpeakers__social absolute flex gap-[1rem] top-[8rem] left-[35%] text-light text-[30px]"
+              >
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+              </ul>
+              <div class="flex">
+                <span
+                  class="bg-light w-[20rem] h-[4rem] block skew-y-12 relative top-[-2rem]"
+                ></span
+                ><span
+                  class="bg-light w-[10rem] h-[3.5rem] block -skew-y-12 relative top-[-1rem]"
+                ></span>
+              </div>
+              <div class="mt-[-2rem] relative">
+                <h3 class="text-[24px]">Jane Smith</h3>
+                <p class="pb-[2rem]">HEAD OF MARKETING, JCOLE CO.</p>
+              </div>
+            </div>
+            <div
+              class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
+            >
+              <img
+                src="./img/team-modern-no-img-375x290-removebg-preview.png"
+                alt="sam-anderson-image"
+                class="w-[25rem] h-[20rem] object-cover brightness-150"
+              />
+              <ul
+                class="homeSpeakers__social absolute flex gap-[1rem] top-[8rem] left-[35%] text-gray-500 text-[30px]"
+              >
+                <li class="group">
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-facebook-f group-hover:text-dark"
+                    ></i
+                  ></a>
+                </li>
+                <li class="group">
+                  <a href=""
+                    ><i class="fa-brands fa-instagram group-hover:text-dark"></i
+                  ></a>
+                </li>
+                <li class="group">
+                  <a href=""
+                    ><i class="fa-brands fa-twitter group-hover:text-dark"></i
+                  ></a>
+                </li>
+              </ul>
+              <div class="flex">
+                <span
+                  class="bg-light w-[20rem] h-[4rem] block skew-y-12 relative top-[-2rem]"
+                ></span
+                ><span
+                  class="bg-light w-[10rem] h-[3.5rem] block -skew-y-12 relative top-[-1rem]"
+                ></span>
+              </div>
+              <div class="mt-[-2rem] relative">
+                <h3 class="text-[24px]">Sam Anderson</h3>
+                <p class="pb-[2rem]">CO-FOUNDER, XFIRE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule">
+      <div class="container">
+        <div class="schedule__wrapper"></div>
+      </div>
+    </section>
+
+    <section class="sponsors py-[5rem]">
+      <div class="container">
+        <div class="sponsors__wrapper place-items-center">
+          <h2 class="text-[clamp(26px,4vw,35px)] text-dark relative mb-[3rem]">
+            <span
+              class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-[45%] before:top-[-1rem]"
+            ></span>
+            Event Sponsors
+          </h2>
+          <div
+            class="sponsors__logo grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-[2rem] gap-[2rem]"
+          >
+            <img src="./img/logo-1-270x119.png" alt="long-logo" />
+            <img src="./img/logo-2-270x119.png" alt="logo-name" />
+            <img src="./img/logo-3-270x119.png" alt="great-slogan-logo " />
+            <img src="./img/logo-4-270x119.png" alt="logo-name" />
+            <img src="./img/logo-5-267x119.png" alt="logo-name" />
+            <img src="./img/logo-6-270x119.png" alt="united-cool-association" />
+            <img src="./img/logo-7-270x119.png" alt="logo-name" />
+            <img src="./img/logo-8-270x119.png" alt="very-long-logo" />
+          </div>
+          <a href="" class="btn bg--puti font-bold">BECOME A SPONSOR</a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="packages bg-graybg2 bg-cover bg-no-repeat w-[100%] h-[100%] py-[5rem]"
+    >
+      <div class="container">
+        <h2
+          class="text-[clamp(26px,4vw,35px)] text-light relative mb-[3rem] text-center"
+        >
+          <span
+            class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-[45%] before:top-[-1rem]"
+          ></span>
+          Ticket Packages
+        </h2>
+        <div class="packages__wrapper grid grid-cols-1 lg:grid-cols-3 gap-[3rem]">
+          <div class="packages__items bg-light max-w-[25rem] h-[32rem] py-[3rem]">
+            <h4 class="text-[clamp(22px,4vw,28px)] text-center">Basic Pass</h4>
+            <h2 class="text-[70px] text-center py-[1rem]">
+              <span class="text-[20px]">$</span>20
+            </h2>
+            <div class="place-self-center">
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> 1-Day Entrance
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> Essential Access
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> 1 Guest Ticket
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> 1 Workshop
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> Free Coffee Break
+              </p>
+            </div>
+
+            <div class="place-self-center mt-[3rem]">
+              <a href="" class="btn bg--puti">BUY NOW</a>
+            </div>
+          </div>
+          <div class="packages__items bg-light max-w-[25rem] py-[3rem] lg:scale-110">
+            <h4 class="text-[clamp(22px,4vw,28px)] text-center">Standard Pass</h4>
+            <h2 class="text-[70px] text-center py-[1rem]">
+              <span class="text-[20px]">$</span>45
+            </h2>
+            <div class="place-self-center">
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> 3-Day Entrance
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> Extended Access
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> 3 Guest Tickets
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> 3 Workshops
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> Free Lunch & Merch
+              </p>
+            </div>
+
+            <div class="place-self-center mt-[3rem]">
+              <a href="" class="btn bg--asul">BUY NOW</a>
+            </div>
+          </div>
+          <div class="packages__items bg-light max-w-[25rem] py-[3rem]">
+            <h4 class="text-[clamp(22px,4vw,28px)] text-center">Premium Pass</h4>
+            <h2 class="text-[70px] text-center py-[1rem]">
+              <span class="text-[20px]">$</span>98
+            </h2>
+            <div class="place-self-center">
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> 4-Day Entrance
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> Ultimate Access
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> 5 Guest Tickets
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> 7 Workshops
+              </p>
+              <p class="flex gap-[1rem] items-center">
+                <i class="fa-solid fa-check"></i> Free Entertainment
+              </p>
+            </div>
+
+            <div class="place-self-center mt-[3rem]">
+              <a href="" class="btn bg--pink">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial py-[5rem]">
+      <div class="container">
+        <div class="testimonial__wrapper">
+          <h3 class="text-[clamp(24px,4vw,30px)] text-center">Testimonial</h3>
+          <div class="testimonial__slider">
+            <div class="testimonial__item">
+              <p>It was a very  useful conference there were a number of presentations that completely changed my understanding of startups. I look forward to visiting this event again next year, maybe even as a speaker</p>
+              <h4>Joanna Smith</h4>
+            </div>
+            <div class="testimonial__item">
+              <p>It is an honour to be invited to this event as a speaker and visitor. By attending Eventy everyone here can share their business experiences so we can learn something new and change the industry for the better</p>
+              <h4>James Williams</h4>
+            </div>
+            <div class="testimonial__item">
+              <p>This venue is an excellent opportunity to share experiences, to gain learning and to establish and enforce connections among executives and business leaders in this industry in the eternal pursuit of maximizing customer experience.</p>
+              <h4>Kate McMillan</h4>
+            </div>
+            <div class="testimonial__item">
+              <p>Very good conference. A unique opportunity to meet with the leading business experts and CEOs from a variety of companies to really see the main trends of technological and business startups.</p>
+              <h4>Peter Wilson</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -162,7 +656,7 @@
         container: ".homeBanner__slider",
         items: 1,
         slideBy: "page",
-        autoplay: false,
+        autoplay: true,
         autoplayButtonOutput: 0,
         controls: 0,
         navContainer: ".homeBanner__slider--nav",

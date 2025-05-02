@@ -5,11 +5,22 @@
 @tailwind utilities;
 
 @layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  p {
+    @apply text-base;
+  }
 }
 
 @layer components {
   .container {
-    @apply max-w-[98rem] w-full m-auto px-[1.5rem];
+    @apply max-w-[80rem] w-full m-auto px-[1.5rem];
   }
   .header {
     @apply lg:bg-transparent z-10 shadow-xl fixed w-[100%] bg-primary text-light font-poppins;
@@ -60,16 +71,29 @@
   .header .toggle__menu.open span:last-child {
     @apply w-[1rem] transform translate-y-[-3px] rotate-[225deg];
   }
+  /* countdown */
+  .homeTimer__countDown {
+    @apply flex flex-row gap-[1rem] text-center justify-center;
+  }
+  .homeTimer p {
+    @apply text-gray-500;
+  }
+  .homeTimer__time h3 {
+    @apply text-[clamp(32px,4vw,92px)] font-semibold;
+  }
 
+  .homeTimer__time ul li i {
+    @apply text-[8px] text-tgray;
+  }
   /* slider */
   .homeBanner__slider--nav li {
-    @apply text-light lg:block hidden text-[24px] ;
+    @apply text-light lg:block hidden text-[24px];
   }
   .homeBanner__slider--nav li.tns-nav-active {
     @apply text-gray-500;
   }
   .homeBanner__slider--nav span {
-    @apply lg:hidden relative top-[17rem] left-[45%];
+    @apply lg:hidden relative top-[21rem] left-[40%] md:left-[50%];
   }
   .homeBanner__slider--nav span:last-child {
     @apply ml-[1rem];
@@ -77,15 +101,35 @@
   .homeBanner__slider--nav span.tns-nav-active {
     @apply text-gray-500;
   }
+
+  /* speakers */
+  .homeSpeakers__social li i,
+  .homeSpeakers__profile h3 {
+    @apply hover:text-gblue transition-all duration-500 ease-in-out;
+  }
+  /* sponsors */
+  .sponsors__logo img {
+    @apply hover:shadow-lg transition-all duration-500 ease-in-out
+  }
+  /* package */
+  .packages__items p i {
+    @apply text-gpurple
+  }
 }
 @layer utilities {
   .btn {
-    @apply inline-block text-light bg-transparent px-[1.5rem] py-[0.5rem];
+    @apply inline-block text-light bg-transparent px-[2rem] py-[1rem];
   }
   .btn.bg--dilaw {
-    @apply bg-dilaw rounded-sm;
+    @apply bg-dilaw rounded-sm px-[1.5rem] py-[0.5rem];
   }
   .btn.bg--asul {
-    @apply bg-gradient-to-r from-gpurple to-gblue rounded-sm;
+    @apply bg-gradient-to-r from-gpurple to-gblue rounded-md hover:bg-gradient-to-r hover:from-gblue hover:to-gpurple;
+  }
+  .btn.bg--puti {
+    @apply bg-light text-dark border-[1px] rounded-md  border-dark hover:bg-dilaw hover:border-dilaw  hover:duration-300 hover:ease-in-out;
+  }
+  .btn.bg--pink {
+    @apply bg-gradient-to-r from-gpink to-dilaw rounded-md hover:bg-gradient-to-r hover:from-dilaw hover:to-gpink;
   }
 }

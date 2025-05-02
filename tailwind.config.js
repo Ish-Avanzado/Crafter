@@ -9,6 +9,9 @@ module.exports = {
       backgroundImage: {
         slideB1: "url(../dist/img/swiper-slide-1.jpg)",
         slideB2: "url(../dist/img/swiper-slide-2.jpg)",
+        dotbg: "url(../dist/img/dot-bg.png)",
+        graybg: "url(../dist/img/graybg.png)",
+        graybg2: "url(../dist/img/graybg2.png)",
         blackOverlay:
           "linear-gradient(to bottom, rgba(225,225,225,225) 0%, rgba(225,225,225,0.9) 100%)",
       },
@@ -17,11 +20,13 @@ module.exports = {
         dark: "#151515",
         light: "#ffffff",
         dilaw: "#ffd541",
+        bggray: "#f5f5f5",
         tgray: "#b8b8b8",
         gpink: "#f85293",
         gorange: "#fc9867",
         gpurple: "#535ddf",
         gblue: "#1dbede",
+        ggreen: "#14c18d",
       },
     },
   },
