@@ -536,8 +536,12 @@
           ></span>
           Ticket Packages
         </h2>
-        <div class="packages__wrapper grid grid-cols-1 lg:grid-cols-3 gap-[3rem]">
-          <div class="packages__items bg-light max-w-[25rem] h-[32rem] py-[3rem]">
+        <div
+          class="packages__wrapper grid grid-cols-1 lg:grid-cols-3 gap-[3rem]"
+        >
+          <div
+            class="packages__items bg-light max-w-[25rem] h-[32rem] py-[3rem] clip-path-customPolygon"
+          >
             <h4 class="text-[clamp(22px,4vw,28px)] text-center">Basic Pass</h4>
             <h2 class="text-[70px] text-center py-[1rem]">
               <span class="text-[20px]">$</span>20
@@ -564,8 +568,12 @@
               <a href="" class="btn bg--puti">BUY NOW</a>
             </div>
           </div>
-          <div class="packages__items bg-light max-w-[25rem] py-[3rem] lg:scale-110">
-            <h4 class="text-[clamp(22px,4vw,28px)] text-center">Standard Pass</h4>
+          <div
+            class="packages__items bg-light max-w-[25rem] py-[3rem] lg:scale-110 clip-path-customPolygon"
+          >
+            <h4 class="text-[clamp(22px,4vw,28px)] text-center">
+              Standard Pass
+            </h4>
             <h2 class="text-[70px] text-center py-[1rem]">
               <span class="text-[20px]">$</span>45
             </h2>
@@ -591,8 +599,12 @@
               <a href="" class="btn bg--asul">BUY NOW</a>
             </div>
           </div>
-          <div class="packages__items bg-light max-w-[25rem] py-[3rem]">
-            <h4 class="text-[clamp(22px,4vw,28px)] text-center">Premium Pass</h4>
+          <div
+            class="packages__items bg-light max-w-[25rem] py-[3rem] clip-path-customPolygon"
+          >
+            <h4 class="text-[clamp(22px,4vw,28px)] text-center">
+              Premium Pass
+            </h4>
             <h2 class="text-[70px] text-center py-[1rem]">
               <span class="text-[20px]">$</span>98
             </h2>
@@ -626,23 +638,66 @@
       <div class="container">
         <div class="testimonial__wrapper">
           <h3 class="text-[clamp(24px,4vw,30px)] text-center">Testimonial</h3>
+          <img
+            src="./img/dots.png"
+            alt="dots"
+            class="place-self-center w-[20rem] h-[10rem] object-cover mt-[3rem]"
+          />
           <div class="testimonial__slider">
             <div class="testimonial__item">
-              <p>It was a very  useful conference there were a number of presentations that completely changed my understanding of startups. I look forward to visiting this event again next year, maybe even as a speaker</p>
-              <h4>Joanna Smith</h4>
+              <div class="testimonial__card">
+                <p>
+                  It was a very useful conference there were a number of
+                  presentations that completely changed my understanding of
+                  startups. I look forward to visiting this event again next
+                  year, maybe even as a speaker
+                </p>
+                <h4>Joanna Smith</h4>
+              </div>
             </div>
             <div class="testimonial__item">
-              <p>It is an honour to be invited to this event as a speaker and visitor. By attending Eventy everyone here can share their business experiences so we can learn something new and change the industry for the better</p>
-              <h4>James Williams</h4>
+              <div class="testimonial__card">
+                <p>
+                  It is an honour to be invited to this event as a speaker and
+                  visitor. By attending Eventy everyone here can share their
+                  business experiences so we can learn something new and change
+                  the industry for the better
+                </p>
+                <h4>James Williams</h4>
+              </div>
             </div>
             <div class="testimonial__item">
-              <p>This venue is an excellent opportunity to share experiences, to gain learning and to establish and enforce connections among executives and business leaders in this industry in the eternal pursuit of maximizing customer experience.</p>
-              <h4>Kate McMillan</h4>
+              <div class="testimonial__card">
+                <p>
+                  This venue is an excellent opportunity to share experiences,
+                  to gain learning and to establish and enforce connections
+                  among executives and business leaders in this industry in the
+                  eternal pursuit of maximizing customer experience.
+                </p>
+                <h4>Kate McMillan</h4>
+              </div>
             </div>
             <div class="testimonial__item">
-              <p>Very good conference. A unique opportunity to meet with the leading business experts and CEOs from a variety of companies to really see the main trends of technological and business startups.</p>
-              <h4>Peter Wilson</h4>
+              <div class="testimonial__card">
+                <p>
+                  Very good conference. A unique opportunity to meet with the
+                  leading business experts and CEOs from a variety of companies
+                  to really see the main trends of technological and business
+                  startups.
+                </p>
+                <h4>Peter Wilson</h4>
+              </div>
             </div>
+          </div>
+          <div class="relative max-w-[90rem] w-full m-auto px-[1.5rem]">
+            <ul
+              class="testimonial__slider--nav max-w-[98rem] w-full m-auto flex flex-row justify-center gap-[1rem]"
+            >
+              <li><img src="./img/user-1-60x60.jpg" alt="" class="rounded-full "></li>
+              <li><img src="./img/user-2-60x60.jpg" alt=""></li>
+              <li><img src="./img/user-3-60x60.jpg" alt=""></li>
+              <li><img src="./img/user-4-60x60.jpg" alt=""></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -660,6 +715,16 @@
         autoplayButtonOutput: 0,
         controls: 0,
         navContainer: ".homeBanner__slider--nav",
+        navAsThumbnails: true,
+      });
+      var slider = tns({
+        container: ".testimonial__slider",
+        items: 1,
+        slideBy: "page",
+        autoplay: false,
+        autoplayButtonOutput: 0,
+        controls: 0,
+        navContainer: ".testimonial__slider--nav",
         navAsThumbnails: true,
       });
     </script>

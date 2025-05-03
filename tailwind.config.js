@@ -28,7 +28,12 @@ module.exports = {
         gblue: "#1dbede",
         ggreen: "#14c18d",
       },
+      clipPath: {
+        customPolygon: "polygon(6% 0, 100% 0, 100% 100%, 0 99%, 0 5%)",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-clip-path")],
 };
+
+// npm install tailwind-clip-path to add the clip-path

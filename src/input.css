@@ -109,11 +109,31 @@
   }
   /* sponsors */
   .sponsors__logo img {
-    @apply hover:shadow-lg transition-all duration-500 ease-in-out
+    @apply hover:shadow-lg transition-all duration-500 ease-in-out;
   }
   /* package */
   .packages__items p i {
-    @apply text-gpurple
+    @apply text-gpurple;
+  }
+  /* testimonial */
+  .testimonial__item {
+    @apply text-gray-500;
+  }
+  .testimonial__card {
+    @apply max-w-[45rem] mx-auto  bg-dilaw;
+  }
+  .testimonial__item p,
+  .testimonial__item h4 {
+    @apply text-center;
+  }
+  .testimonial__item h4 {
+    @apply text-gblue mt-[1rem];
+  }
+  .testimonial__slider--nav img {
+    @apply w-[5rem] rounded-full object-cover;
+  }
+  .testimonial__slider--nav li.tns-nav-active {
+    @apply shadow-lg;
   }
 }
 @layer utilities {
