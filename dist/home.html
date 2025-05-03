@@ -86,7 +86,7 @@
             class="homeBannner__slider--item relative bg-slideB2 bg-cover bg-no-repeat w-[100%] h-[40rem] lg:h-[60rem] py-[5rem]"
           >
             <div
-              class="lg:absolute lg:top-[40rem] lg:right-[30rem] max-w-[6rem] text-center group ml-[4rem] pt-[3rem]"
+              class="md:absolute md:top-[40rem] md:right-[30rem] max-w-[6rem] text-center group ml-[4rem] pt-[3rem]"
             >
               <i
                 class="fa-sharp fa-solid fa-play text-dilaw text-[1.8rem] group-hover:text-gblue"
@@ -532,7 +532,7 @@
           class="text-[clamp(26px,4vw,35px)] text-light relative mb-[3rem] text-center"
         >
           <span
-            class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-[45%] before:top-[-1rem]"
+            class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-[46%] before:top-[-1rem]"
           ></span>
           Ticket Packages
         </h2>
@@ -540,7 +540,7 @@
           class="packages__wrapper grid grid-cols-1 lg:grid-cols-3 gap-[3rem]"
         >
           <div
-            class="packages__items bg-light max-w-[25rem] h-[32rem] py-[3rem] clip-path-customPolygon"
+            class="packages__items bg-light max-w-[25rem] h-[32rem] py-[3rem] clip-path-customPolygon "
           >
             <h4 class="text-[clamp(22px,4vw,28px)] text-center">Basic Pass</h4>
             <h2 class="text-[70px] text-center py-[1rem]">
@@ -637,12 +637,15 @@
     <section class="testimonial py-[5rem]">
       <div class="container">
         <div class="testimonial__wrapper">
-          <h3 class="text-[clamp(24px,4vw,30px)] text-center">Testimonial</h3>
-          <img
+          <h3 class="text-[clamp(24px,4vw,30px)] text-center mb-[3rem]">Testimonial</h3>
+          <div class="relative max-w-[20rem] mx-auto">
+            <img
             src="./img/dots.png"
             alt="dots"
-            class="place-self-center w-[20rem] h-[10rem] object-cover mt-[3rem]"
+            class=" w-[20rem] h-[10rem] object-cover absolute mt-[-1.5rem]"
           />
+          </div>
+          
           <div class="testimonial__slider">
             <div class="testimonial__item">
               <div class="testimonial__card">
@@ -689,15 +692,23 @@
               </div>
             </div>
           </div>
-          <div class="relative max-w-[90rem] w-full m-auto px-[1.5rem]">
-            <ul
-              class="testimonial__slider--nav max-w-[98rem] w-full m-auto flex flex-row justify-center gap-[1rem]"
+          <div class="relative">
+              <ul
+            class="testimonial__slider--control max-w-[98rem] w-full flex justify-between absolute top-[-11rem] md:top-[-9rem]"
+          >
+            <li><i class="fa-sharp fa-solid fa-arrow-left"></i></li>
+            <li><i class="fa-sharp fa-solid fa-arrow-right"></i></li>
+          </ul>
+            
+            <div
+              class="testimonial__slider--nav max-w-[98rem] w-full m-auto flex flex-row justify-center gap-[1rem] mt-[3rem]"
             >
-              <li><img src="./img/user-1-60x60.jpg" alt="" class="rounded-full "></li>
-              <li><img src="./img/user-2-60x60.jpg" alt=""></li>
-              <li><img src="./img/user-3-60x60.jpg" alt=""></li>
-              <li><img src="./img/user-4-60x60.jpg" alt=""></li>
-            </ul>
+            
+              <img src="./img/user-1-60x60.jpg" alt="" class="rounded-full">
+              <img src="./img/user-2-60x60.jpg" alt="" class="rounded-full">
+              <img src="./img/user-3-60x60.jpg" alt="" class="rounded-full">
+              <img src="./img/user-4-60x60.jpg" alt="" class="rounded-full">
+          </div>
           </div>
         </div>
       </div>
@@ -723,8 +734,8 @@
         slideBy: "page",
         autoplay: false,
         autoplayButtonOutput: 0,
-        controls: 0,
         navContainer: ".testimonial__slider--nav",
+        controlsContainer: ".testimonial__slider--control",
         navAsThumbnails: true,
       });
     </script>

@@ -28,6 +28,10 @@ module.exports = {
         gblue: "#1dbede",
         ggreen: "#14c18d",
       },
+      boxShadow: {
+        shadow5: "rgba(0, 0, 0, 0.24) 0px 3px 8px;",
+        shadow30: "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;",
+      },
       clipPath: {
         customPolygon: "polygon(6% 0, 100% 0, 100% 100%, 0 99%, 0 5%)",
       },
