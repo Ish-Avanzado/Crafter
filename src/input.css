@@ -135,6 +135,10 @@
   .testimonial__slider--nav img.tns-nav-active {
     @apply shadow-shadow30;
   }
+
+  /* sched */
+
+  
 }
 @layer utilities {
   .btn {

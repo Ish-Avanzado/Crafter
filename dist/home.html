@@ -492,9 +492,49 @@
       </div>
     </section>
 
-    <section class="schedule">
+    <section class="schedule py-[5rem]">
       <div class="container">
-        <div class="schedule__wrapper"></div>
+        <div class="schedule__wrapper">
+          <div class="sched__menu">
+            <h2
+              class="text-[clamp(26px,4vw,35px)] ml-[1rem] mb-[1rem] text-center"
+            >
+              <span
+                class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:relative before:right-[1rem] before:bottom-[0.5rem]"
+              ></span>
+              Event Schedule
+            </h2>
+            <ul
+              class="sched__menu bg-primary text-light text-center font-bold clip-path-customPol p-[2rem]"
+            >
+              <li id="sched-1" class="sched__nav"><a href="">FIRST DAY</a></li>
+              <li id="sched-2" class="sched__nav"><a href="">SECOND DAY</a></li>
+              <li id="sched-3" class="sched__nav"><a href="">THIRD DAY</a></li>
+              <li id="sched-4" class="sched__nav"><a href="">FOURTH DAY</a></li>
+            </ul>
+          </div>
+          <div class="sched__tab">
+            <div id="sched-1-content" class="sched__item">
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <img
+                  src="./img/user-1-109x109.jpg"
+                  alt="jane-smith-image"
+                  class="rounded-full"
+                />
+                <p>9:00am - 11:00am</p>
+                <h4>Efficient Business Management Techniques</h4>
+                <p>
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >Jane Smith</span
+                  >, JCole Co.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -540,7 +580,7 @@
           class="packages__wrapper grid grid-cols-1 lg:grid-cols-3 gap-[3rem]"
         >
           <div
-            class="packages__items bg-light max-w-[25rem] h-[32rem] py-[3rem] clip-path-customPolygon "
+            class="packages__items bg-light max-w-[25rem] h-[32rem] py-[3rem] clip-path-customPolygon"
           >
             <h4 class="text-[clamp(22px,4vw,28px)] text-center">Basic Pass</h4>
             <h2 class="text-[70px] text-center py-[1rem]">
@@ -637,15 +677,17 @@
     <section class="testimonial py-[5rem]">
       <div class="container">
         <div class="testimonial__wrapper">
-          <h3 class="text-[clamp(24px,4vw,30px)] text-center mb-[3rem]">Testimonial</h3>
+          <h3 class="text-[clamp(24px,4vw,30px)] text-center mb-[3rem]">
+            Testimonial
+          </h3>
           <div class="relative max-w-[20rem] mx-auto">
             <img
-            src="./img/dots.png"
-            alt="dots"
-            class=" w-[20rem] h-[10rem] object-cover absolute mt-[-1.5rem]"
-          />
+              src="./img/dots.png"
+              alt="dots"
+              class="w-[20rem] h-[10rem] object-cover absolute mt-[-1.5rem]"
+            />
           </div>
-          
+
           <div class="testimonial__slider">
             <div class="testimonial__item">
               <div class="testimonial__card">
@@ -693,27 +735,62 @@
             </div>
           </div>
           <div class="relative">
-              <ul
-            class="testimonial__slider--control max-w-[98rem] w-full flex justify-between absolute top-[-11rem] md:top-[-9rem]"
-          >
-            <li><i class="fa-sharp fa-solid fa-arrow-left"></i></li>
-            <li><i class="fa-sharp fa-solid fa-arrow-right"></i></li>
-          </ul>
-            
+            <ul
+              class="testimonial__slider--control max-w-[98rem] w-full flex justify-between absolute top-[-11rem] md:top-[-9rem]"
+            >
+              <li><i class="fa-sharp fa-solid fa-arrow-left"></i></li>
+              <li><i class="fa-sharp fa-solid fa-arrow-right"></i></li>
+            </ul>
+
             <div
               class="testimonial__slider--nav max-w-[98rem] w-full m-auto flex flex-row justify-center gap-[1rem] mt-[3rem]"
             >
-            
-              <img src="./img/user-1-60x60.jpg" alt="" class="rounded-full">
-              <img src="./img/user-2-60x60.jpg" alt="" class="rounded-full">
-              <img src="./img/user-3-60x60.jpg" alt="" class="rounded-full">
-              <img src="./img/user-4-60x60.jpg" alt="" class="rounded-full">
-          </div>
+              <img src="./img/user-1-60x60.jpg" alt="" class="rounded-full" />
+              <img src="./img/user-2-60x60.jpg" alt="" class="rounded-full" />
+              <img src="./img/user-3-60x60.jpg" alt="" class="rounded-full" />
+              <img src="./img/user-4-60x60.jpg" alt="" class="rounded-full" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section
+      class="experience bg-graybg bg-no-repeat bg-cover w-[100%] h-[20rem] py-[5rem]"
+    >
+      <div class="container">
+        <div class="experience__wrapper">
+          <h2
+            class="text-[clamp(26px,4vw,35px)] text-light relative mb-[3rem] text-center"
+          >
+            <span
+              class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-[46%] before:top-[-1rem]"
+            ></span>
+            Transform your business experience with our event!
+          </h2>
+          <div class="place-self-center mt-[3rem]">
+            <a href="" class="btn bg--asul font-bold">BUY TICKETS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div
+          class="gallery__wrapper grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[2rem]"
+        >
+          <img src="./img/gallery-1-original.jpg" alt="" />
+          <img src="./img/gallery-2-original.jpg" alt="" />
+          <img src="./img/gallery-3-original.jpg" alt="" />
+          <img src="./img/gallery-12-original.jpg" alt="" />
+          <img src="./img/gallery-9-original.jpg" alt="" />
+          <img src="./img/gallery-13-original.jpg" alt="" />
+          <img src="./img/gallery-11-original.jpg" alt="" />
+          <img src="./img/gallery-8-original.jpg" alt="" />
+        </div>
+      </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="module">
       //   import { tns } from "./src/tiny-slider.js";

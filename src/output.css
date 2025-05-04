@@ -923,6 +923,8 @@ p{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+/* sched */
+
 .absolute{
   position: absolute;
 }
@@ -933,10 +935,6 @@ p{
 
 .left-\[35\%\]{
   left: 35%;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .top-\[-11rem\]{
@@ -976,6 +974,10 @@ p{
 .my-\[2rem\]{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mb-\[1rem\]{
+  margin-bottom: 1rem;
 }
 
 .mb-\[2rem\]{
@@ -1074,10 +1076,6 @@ p{
   width: 25rem;
 }
 
-.w-\[60rem\]{
-  width: 60rem;
-}
-
 .w-\[6rem\]{
   width: 6rem;
 }
@@ -1086,16 +1084,20 @@ p{
   width: 100%;
 }
 
+.w-\[\]{
+  width: ;
+}
+
+.w-\[100\]{
+  width: 100;
+}
+
 .max-w-\[20rem\]{
   max-width: 20rem;
 }
 
 .max-w-\[25rem\]{
   max-width: 25rem;
-}
-
-.max-w-\[60rem\]{
-  max-width: 60rem;
 }
 
 .max-w-\[6rem\]{
@@ -1122,6 +1124,10 @@ p{
 .skew-y-12{
   --tw-skew-y: 12deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .grid-cols-1{
@@ -1164,6 +1170,14 @@ p{
   gap: 3rem;
 }
 
+.gap-\[\]{
+  gap: ;
+}
+
+.gap-\[2re\]{
+  gap: 2re;
+}
+
 .place-self-center{
   place-self: center;
 }
@@ -1181,14 +1195,18 @@ p{
   border-bottom-left-radius: 1.5rem;
 }
 
-.bg-bggray{
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
-}
-
 .bg-light{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 65 65 / var(--tw-bg-opacity, 1));
+}
+
+.bg-dotbg{
+  background-image: url(../dist/img/dot-bg.png);
 }
 
 .bg-gradient-to-r{
@@ -1209,10 +1227,6 @@ p{
 
 .bg-slideB2{
   background-image: url(../dist/img/swiper-slide-2.jpg);
-}
-
-.bg-dotbg{
-  background-image: url(../dist/img/dot-bg.png);
 }
 
 .from-dilaw{
@@ -1267,6 +1281,10 @@ p{
      object-fit: cover;
 }
 
+.p-\[2rem\]{
+  padding: 2rem;
+}
+
 .p-\[3rem\]{
   padding: 3rem;
 }
@@ -1298,10 +1316,6 @@ p{
 
 .pb-\[2rem\]{
   padding-bottom: 2rem;
-}
-
-.pb-\[5rem\]{
-  padding-bottom: 5rem;
 }
 
 .pt-\[3rem\]{
@@ -1399,6 +1413,11 @@ p{
   color: rgb(255 213 65 / var(--tw-text-opacity, 1));
 }
 
+.text-gblue{
+  --tw-text-opacity: 1;
+  color: rgb(29 190 222 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
@@ -1424,6 +1443,12 @@ p{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-shadow5{
+  --tw-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+  --tw-shadow-colored: 0px 3px 8px; var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .brightness-150{
   --tw-brightness: brightness(1.5);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1436,6 +1461,10 @@ p{
 
 .clip-path-customPolygon{
   clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 99%, 0 5%);
+}
+
+.clip-path-customPol{
+  clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%, 0 18%);
 }
 
 .btn{
@@ -1588,6 +1617,11 @@ p{
   color: rgb(29 190 222 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-gpurple:hover{
+  --tw-text-opacity: 1;
+  color: rgb(83 93 223 / var(--tw-text-opacity, 1));
+}
+
 .hover\:transition-all:hover{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1638,8 +1672,16 @@ p{
     display: flex;
   }
 
+  .md\:grid{
+    display: grid;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:items-center{
@@ -1668,12 +1710,16 @@ p{
     display: flex;
   }
 
-  .lg\:h-\[60rem\]{
-    height: 60rem;
+  .lg\:grid{
+    display: grid;
   }
 
   .lg\:h-\[30rem\]{
     height: 30rem;
+  }
+
+  .lg\:h-\[60rem\]{
+    height: 60rem;
   }
 
   .lg\:max-w-\[50rem\]{
