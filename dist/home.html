@@ -16,6 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -67,17 +68,17 @@
               <p class="text-[18px] py-[1rem]">
                 JULY 05-09 2021, LOS ANGELES, CA
               </p>
-              <span class="block w-[6rem] h-[0.1rem] bg-light"></span>
+              <span data-aos="fade-right" class="block w-[6rem] h-[0.1rem] bg-light"></span>
               <h2 class="text-[clamp(28px,4vw,50px)] font-extrabold">
                 EVENTY UNITIES
               </h2>
-              <h1>
+              <h1 data-aos="fade-right">
                 <span
                   class="text-transparent text-[70px] md:text-[100px] lg:text-[160px] font-extrabold bg-clip-text bg-gradient-to-r from-gpink to-gorange"
                   >PEOPLE</span
                 >
               </h1>
-              <div>
+              <div data-aos="fade-right">
                 <a href="" class="btn bg--asul">BUY TICKETS</a>
               </div>
             </div>
@@ -103,17 +104,17 @@
               <p class="text-[18px] py-[1rem]">
                 JULY 05-09 2021, LOS ANGELES, CA
               </p>
-              <span class="block w-[6rem] h-[0.1rem] bg-light"></span>
+              <span data-aos="fade-right" class="block w-[6rem] h-[0.1rem] bg-light"></span>
               <h2 class="text-[clamp(28px,4vw,50px)] font-extrabold">
                 TALK ABOUT YOUR
               </h2>
-              <h1>
+              <h1 data-aos="fade-right">
                 <span
                   class="text-transparent text-[70px] md:text-[100px] lg:text-[160px] font-extrabold bg-clip-text bg-gradient-to-r from-gpink to-gorange"
                   >IDEA</span
                 >
               </h1>
-              <a href="" class="btn bg--asul">BUY TICKETS</a>
+              <a data-aos="fade-right" href="" class="btn bg--asul">BUY TICKETS</a>
             </div>
           </div>
         </div>
@@ -207,7 +208,7 @@
     <section class="homeEventy font-poppins py-[5rem]">
       <div class="container">
         <div class="homeEventy__wrapper lg:flex lg:justify-between">
-          <div class="homeEventy__text">
+          <div data-aos="fade-right" class="homeEventy__text">
             <h2 class="text-[clamp(26px,4vw,35px)] ml-[1rem]">
               <span
                 class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:relative before:right-[1rem] before:bottom-[0.5rem]"
@@ -244,7 +245,7 @@
               </div>
             </div>
           </div>
-          <div class="homeEventy__image">
+          <div  data-aos="fade-left" class="homeEventy__image">
             <img src="./img/home-1-599x376.jpg" alt="Eventy-photo" />
           </div>
         </div>
@@ -259,13 +260,13 @@
           <div
             class="flex flex-col lg:flex lg:flex-row-reverse lg:items-center lg:justify-between"
           >
-            <h2 class="text-[clamp(26px,4vw,35px)] text-light relative">
+            <h2 data-aos="fade-left" class="text-[clamp(26px,4vw,35px)] text-light relative">
               <span
                 class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-0 before:top-[-1rem]"
               ></span>
               Speakers
             </h2>
-            <p class="text-tgray py-[2rem] lg:max-w-[50rem]">
+            <p data-aos="fade-right" class="text-light py-[2rem] lg:max-w-[50rem]">
               Our event gathers over 50 speakers. They include international
               company owners and young entrepreneurs that revolutionized the way
               of doing business. Here are some of them.
@@ -274,7 +275,7 @@
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] place-items-center"
           >
-            <div
+            <div data-aos="fade-up"
               class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
             >
               <img
@@ -308,7 +309,7 @@
                 <p class="pb-[2rem]">CEO, ISTEP LTD.</p>
               </div>
             </div>
-            <div
+            <div data-aos="fade-up"
               class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
             >
               <img
@@ -343,7 +344,7 @@
               </div>
             </div>
 
-            <div
+            <div data-aos="fade-up"
               class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
             >
               <img
@@ -377,7 +378,7 @@
                 <p class="pb-[2rem]">MANAGING DIRECTOR, LTP GROUP</p>
               </div>
             </div>
-            <div
+            <div data-aos="fade-up"
               class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
             >
               <img
@@ -411,7 +412,7 @@
                 <p class="pb-[2rem]">CTO, WILSON'S TECH</p>
               </div>
             </div>
-            <div
+            <div data-aos="fade-up"
               class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
             >
               <img
@@ -445,7 +446,7 @@
                 <p class="pb-[2rem]">HEAD OF MARKETING, JCOLE CO.</p>
               </div>
             </div>
-            <div
+            <div data-aos="fade-up"
               class="homeSpeakers__profile relative bg-light text-center overflow-hidden max-w-[25rem]"
             >
               <img
@@ -492,10 +493,12 @@
       </div>
     </section>
 
-    <section class="schedule py-[5rem]">
+    <section class="schedule py-[5rem] bg-bggray">
       <div class="container">
         <div class="schedule__wrapper">
-          <div class="sched__menu">
+          <div
+            class="sched__menu mb-[3rem] lg:grid lg:grid-cols-[_1fr,_2fr] lg:gap-[3rem]"
+          >
             <h2
               class="text-[clamp(26px,4vw,35px)] ml-[1rem] mb-[1rem] text-center"
             >
@@ -505,31 +508,407 @@
               Event Schedule
             </h2>
             <ul
-              class="sched__menu bg-primary text-light text-center font-bold clip-path-customPol p-[2rem]"
+              class="sched__menu bg-primary text-light text-center font-bold clip-path-customPol p-[2rem] flex flex-col gap-[1rem] md:flex-row md:gap-[2rem] lg:justify-around"
             >
-              <li id="sched-1" class="sched__nav"><a href="">FIRST DAY</a></li>
-              <li id="sched-2" class="sched__nav"><a href="">SECOND DAY</a></li>
-              <li id="sched-3" class="sched__nav"><a href="">THIRD DAY</a></li>
-              <li id="sched-4" class="sched__nav"><a href="">FOURTH DAY</a></li>
+              <li id="sched-1" class="sched__nav active">
+                <a href="javascript:void(0)">FIRST DAY</a>
+              </li>
+              <li id="sched-2" class="sched__nav">
+                <a href="javascript:void(0)">SECOND DAY</a>
+              </li>
+              <li id="sched-3" class="sched__nav">
+                <a href="javascript:void(0)">THIRD DAY</a>
+              </li>
+              <li id="sched-4" class="sched__nav">
+                <a href="javascript:void(0)">FOURTH DAY</a>
+              </li>
             </ul>
           </div>
           <div class="sched__tab">
-            <div id="sched-1-content" class="sched__item">
+            <div
+              id="sched-1-content"
+              class="sched__item flex flex-col gap-[2rem] active"
+            >
               <div
                 class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
               >
                 <img
                   src="./img/user-1-109x109.jpg"
                   alt="jane-smith-image"
-                  class="rounded-full"
+                  class="rounded-full mb-[1rem]"
                 />
-                <p>9:00am - 11:00am</p>
-                <h4>Efficient Business Management Techniques</h4>
-                <p>
+                <p class="text-base text-gray-500">9:00am - 11:00am</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  Efficient Business Management Techniques
+                </h4>
+                <p class="text-base">
                   by
                   <span class="cursor-pointer text-gblue hover:text-gpurple"
                     >Jane Smith</span
                   >, JCole Co.
+                </p>
+              </div>
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <img
+                  src="./img/user-2-109x109.jpg"
+                  alt="jane-smith-image"
+                  class="rounded-full mb-[1rem]"
+                />
+                <p class="text-base text-gray-500">11:00 am - 1:00 pm</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  How to Build a Successful Startup in the USA
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >John Clark</span
+                  >, iStep Ltd.
+                </p>
+                <p class="text-base py-[1rem]">
+                  John Clark, the founder of iStep, one of the most successful
+                  American IT companies, will teach you how to plan the work of
+                  your startup the right way and get successful.
+                </p>
+                <p class="text-base">
+                  Location:
+                  <span class="cursor-pointer text-dilaw">Hall #1</span>
+                </p>
+              </div>
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <div class="flex gap-[1rem]">
+                  <img
+                    src="./img/user-1-60x60.jpg"
+                    alt="jane-smith-image"
+                    class="rounded-full mb-[1rem]"
+                  />
+                  <img
+                    src="./img/user-2-60x60.jpg"
+                    alt="jane-smith-image"
+                    class="rounded-full mb-[1rem]"
+                  />
+                  <img
+                    src="./img/user-2-60x60.jpg"
+                    alt="jane-smith-image"
+                    class="rounded-full mb-[1rem]"
+                  />
+                </div>
+
+                <p class="text-base text-gray-500">1:00 pm - 3:00 pm</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  Why Technology has a Great Influence on Your Business
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >J.Smith</span
+                  >,<span class="cursor-pointer text-gblue hover:text-gpurple">
+                    C. Wilson</span
+                  >,
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >J. Clark</span
+                  >, US Tech Holding.
+                </p>
+              </div>
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <img
+                  src="./img/user-3-109x109.jpg"
+                  alt=" Peter-McMillan-image"
+                  class="rounded-full mb-[1rem]"
+                />
+
+                <p class="text-base text-gray-500">3:00 pm - 5:00 pm</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  Managing International Enterprises
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >Peter McMillan</span
+                  >, LTP Group
+                </p>
+              </div>
+            </div>
+            <div
+              id="sched-2-content"
+              class="sched__item flex flex-col gap-[2rem]"
+            >
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <div class="flex gap-[1rem]">
+                  <img
+                    src="./img/user-1-60x60.jpg"
+                    alt="jane-smith-image"
+                    class="rounded-full mb-[1rem]"
+                  />
+                  <img
+                    src="./img/user-2-60x60.jpg"
+                    alt="jane-smith-image"
+                    class="rounded-full mb-[1rem]"
+                  />
+                  <img
+                    src="./img/user-2-60x60.jpg"
+                    alt="jane-smith-image"
+                    class="rounded-full mb-[1rem]"
+                  />
+                </div>
+
+                <p class="text-base text-gray-500">9:00 am - 11:00 am</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  Why Technology has a Great Influence on Your Business
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >J.Smith</span
+                  >,<span class="cursor-pointer text-gblue hover:text-gpurple">
+                    C. Wilson</span
+                  >,
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >J. Clark</span
+                  >, US Tech Holding.
+                </p>
+              </div>
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <img
+                  src="./img/user-3-109x109.jpg"
+                  alt=" Peter-McMillan-image"
+                  class="rounded-full mb-[1rem]"
+                />
+
+                <p class="text-base text-gray-500">11:00 am - 1:00 pm</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  Managing International Enterprises
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >Peter McMillan</span
+                  >, LTP Group
+                </p>
+              </div>
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <img
+                  src="./img/user-1-109x109.jpg"
+                  alt="jane-smith-image"
+                  class="rounded-full mb-[1rem]"
+                />
+                <p class="text-base text-gray-500">1:00 pm - 3:00 pm</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  Efficient Business Management Techniques
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >Jane Smith</span
+                  >, JCole Co.
+                </p>
+              </div>
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <img
+                  src="./img/user-2-109x109.jpg"
+                  alt="jane-smith-image"
+                  class="rounded-full mb-[1rem]"
+                />
+                <p class="text-base text-gray-500">3:00 pm - 5:00 pm</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  How to Build a Successful Startup in the USA
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >John Clark</span
+                  >, iStep Ltd.
+                </p>
+                <p class="text-base py-[1rem]">
+                  John Clark, the founder of iStep, one of the most successful
+                  American IT companies, will teach you how to plan the work of
+                  your startup the right way and get successful.
+                </p>
+                <p class="text-base">
+                  Location:
+                  <span class="cursor-pointer text-dilaw">Hall #1</span>
+                </p>
+              </div>
+            </div>
+            <div
+              id="sched-3-content"
+              class="sched__item flex flex-col gap-[2rem]"
+            >
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <div class="flex gap-[1rem]">
+                  <img
+                    src="./img/user-1-60x60.jpg"
+                    alt="jane-smith-image"
+                    class="rounded-full mb-[1rem]"
+                  />
+                  <img
+                    src="./img/user-2-60x60.jpg"
+                    alt="jane-smith-image"
+                    class="rounded-full mb-[1rem]"
+                  />
+                  <img
+                    src="./img/user-2-60x60.jpg"
+                    alt="jane-smith-image"
+                    class="rounded-full mb-[1rem]"
+                  />
+                </div>
+
+                <p class="text-base text-gray-500">9:00 am - 11:00 am</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  Why Technology has a Great Influence on Your Business
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >J.Smith</span
+                  >,<span class="cursor-pointer text-gblue hover:text-gpurple">
+                    C. Wilson</span
+                  >,
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >J. Clark</span
+                  >, US Tech Holding.
+                </p>
+              </div>
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <img
+                  src="./img/user-3-109x109.jpg"
+                  alt=" Peter-McMillan-image"
+                  class="rounded-full mb-[1rem]"
+                />
+
+                <p class="text-base text-gray-500">11:00 am - 1:00 pm</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  Managing International Enterprises
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >Peter McMillan</span
+                  >, LTP Group
+                </p>
+              </div>
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <img
+                  src="./img/user-2-109x109.jpg"
+                  alt="jane-smith-image"
+                  class="rounded-full mb-[1rem]"
+                />
+                <p class="text-base text-gray-500">3:00 pm - 5:00 pm</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  How to Build a Successful Startup in the USA
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >John Clark</span
+                  >, iStep Ltd.
+                </p>
+                <p class="text-base py-[1rem]">
+                  John Clark, the founder of iStep, one of the most successful
+                  American IT companies, will teach you how to plan the work of
+                  your startup the right way and get successful.
+                </p>
+                <p class="text-base">
+                  Location:
+                  <span class="cursor-pointer text-dilaw">Hall #1</span>
+                </p>
+              </div>
+            </div>
+            <div
+              id="sched-4-content"
+              class="sched__item flex flex-col gap-[2rem]"
+            >
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <img
+                  src="./img/user-3-109x109.jpg"
+                  alt=" Peter-McMillan-image"
+                  class="rounded-full mb-[1rem]"
+                />
+
+                <p class="text-base text-gray-500">11:00 am - 1:00 pm</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  Managing International Enterprises
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >Peter McMillan</span
+                  >, LTP Group
+                </p>
+              </div>
+              <div
+                class="sched__profile bg-light text-dark shadow-shadow5 p-[2rem]"
+              >
+                <img
+                  src="./img/user-2-109x109.jpg"
+                  alt="jane-smith-image"
+                  class="rounded-full mb-[1rem]"
+                />
+                <p class="text-base text-gray-500">3:00 pm - 5:00 pm</p>
+                <h4
+                  class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-semibold my-[1rem]"
+                >
+                  How to Build a Successful Startup in the USA
+                </h4>
+                <p class="text-base">
+                  by
+                  <span class="cursor-pointer text-gblue hover:text-gpurple"
+                    >John Clark</span
+                  >, iStep Ltd.
+                </p>
+                <p class="text-base py-[1rem]">
+                  John Clark, the founder of iStep, one of the most successful
+                  American IT companies, will teach you how to plan the work of
+                  your startup the right way and get successful.
+                </p>
+                <p class="text-base">
+                  Location:
+                  <span class="cursor-pointer text-dilaw">Hall #1</span>
                 </p>
               </div>
             </div>
@@ -550,16 +929,16 @@
           <div
             class="sponsors__logo grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-[2rem] gap-[2rem]"
           >
-            <img src="./img/logo-1-270x119.png" alt="long-logo" />
-            <img src="./img/logo-2-270x119.png" alt="logo-name" />
-            <img src="./img/logo-3-270x119.png" alt="great-slogan-logo " />
-            <img src="./img/logo-4-270x119.png" alt="logo-name" />
-            <img src="./img/logo-5-267x119.png" alt="logo-name" />
-            <img src="./img/logo-6-270x119.png" alt="united-cool-association" />
-            <img src="./img/logo-7-270x119.png" alt="logo-name" />
-            <img src="./img/logo-8-270x119.png" alt="very-long-logo" />
+            <img data-aos="fade-up" src="./img/logo-1-270x119.png" alt="long-logo" />
+            <img data-aos="fade-up" src="./img/logo-2-270x119.png" alt="logo-name" />
+            <img data-aos="fade-up" src="./img/logo-3-270x119.png" alt="great-slogan-logo " />
+            <img data-aos="fade-up" src="./img/logo-4-270x119.png" alt="logo-name" />
+            <img data-aos="fade-up" src="./img/logo-5-267x119.png" alt="logo-name" />
+            <img data-aos="fade-up" src="./img/logo-6-270x119.png" alt="united-cool-association" />
+            <img data-aos="fade-up" src="./img/logo-7-270x119.png" alt="logo-name" />
+            <img data-aos="fade-up" src="./img/logo-8-270x119.png" alt="very-long-logo" />
           </div>
-          <a href="" class="btn bg--puti font-bold">BECOME A SPONSOR</a>
+          <a data-aos="fade-down" href="" class="btn bg--puti font-bold">BECOME A SPONSOR</a>
         </div>
       </div>
     </section>
@@ -579,95 +958,103 @@
         <div
           class="packages__wrapper grid grid-cols-1 lg:grid-cols-3 gap-[3rem]"
         >
-          <div
-            class="packages__items bg-light max-w-[25rem] h-[32rem] py-[3rem] clip-path-customPolygon"
-          >
-            <h4 class="text-[clamp(22px,4vw,28px)] text-center">Basic Pass</h4>
-            <h2 class="text-[70px] text-center py-[1rem]">
-              <span class="text-[20px]">$</span>20
-            </h2>
-            <div class="place-self-center">
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> 1-Day Entrance
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> Essential Access
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> 1 Guest Ticket
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> 1 Workshop
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> Free Coffee Break
-              </p>
-            </div>
+          <div  data-aos="fade-right" class="packages__items">
+            <div
+              class="bg-light max-w-[25rem] h-[32rem] py-[3rem] clip-path-customPolygon mx-auto"
+            >
+              <h4 class="text-[clamp(22px,4vw,28px)] text-center">
+                Basic Pass
+              </h4>
+              <h2 class="text-[70px] text-center py-[1rem]">
+                <span class="text-[20px]">$</span>20
+              </h2>
+              <div class="place-self-center">
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> 1-Day Entrance
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> Essential Access
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> 1 Guest Ticket
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> 1 Workshop
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> Free Coffee Break
+                </p>
+              </div>
 
-            <div class="place-self-center mt-[3rem]">
-              <a href="" class="btn bg--puti">BUY NOW</a>
+              <div class="place-self-center mt-[3rem]">
+                <a href="" class="btn bg--puti">BUY NOW</a>
+              </div>
             </div>
           </div>
-          <div
-            class="packages__items bg-light max-w-[25rem] py-[3rem] lg:scale-110 clip-path-customPolygon"
-          >
-            <h4 class="text-[clamp(22px,4vw,28px)] text-center">
-              Standard Pass
-            </h4>
-            <h2 class="text-[70px] text-center py-[1rem]">
-              <span class="text-[20px]">$</span>45
-            </h2>
-            <div class="place-self-center">
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> 3-Day Entrance
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> Extended Access
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> 3 Guest Tickets
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> 3 Workshops
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> Free Lunch & Merch
-              </p>
-            </div>
+          <div class="packages__items">
+            <div
+              class="bg-light max-w-[25rem] py-[3rem] lg:scale-110 clip-path-customPolygon mx-auto"
+            >
+              <h4 class="text-[clamp(22px,4vw,28px)] text-center">
+                Standard Pass
+              </h4>
+              <h2 class="text-[70px] text-center py-[1rem]">
+                <span class="text-[20px]">$</span>45
+              </h2>
+              <div class="place-self-center">
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> 3-Day Entrance
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> Extended Access
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> 3 Guest Tickets
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> 3 Workshops
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> Free Lunch & Merch
+                </p>
+              </div>
 
-            <div class="place-self-center mt-[3rem]">
-              <a href="" class="btn bg--asul">BUY NOW</a>
+              <div class="place-self-center mt-[3rem]">
+                <a href="" class="btn bg--asul">BUY NOW</a>
+              </div>
             </div>
           </div>
-          <div
-            class="packages__items bg-light max-w-[25rem] py-[3rem] clip-path-customPolygon"
-          >
-            <h4 class="text-[clamp(22px,4vw,28px)] text-center">
-              Premium Pass
-            </h4>
-            <h2 class="text-[70px] text-center py-[1rem]">
-              <span class="text-[20px]">$</span>98
-            </h2>
-            <div class="place-self-center">
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> 4-Day Entrance
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> Ultimate Access
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> 5 Guest Tickets
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> 7 Workshops
-              </p>
-              <p class="flex gap-[1rem] items-center">
-                <i class="fa-solid fa-check"></i> Free Entertainment
-              </p>
-            </div>
+          <div  data-aos="fade-left" class="packages__items">
+            <div
+              class="bg-light max-w-[25rem] py-[3rem] clip-path-customPolygon mx-auto"
+            >
+              <h4 class="text-[clamp(22px,4vw,28px)] text-center">
+                Premium Pass
+              </h4>
+              <h2 class="text-[70px] text-center py-[1rem]">
+                <span class="text-[20px]">$</span>98
+              </h2>
+              <div class="place-self-center">
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> 4-Day Entrance
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> Ultimate Access
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> 5 Guest Tickets
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> 7 Workshops
+                </p>
+                <p class="flex gap-[1rem] items-center">
+                  <i class="fa-solid fa-check"></i> Free Entertainment
+                </p>
+              </div>
 
-            <div class="place-self-center mt-[3rem]">
-              <a href="" class="btn bg--pink">BUY NOW</a>
+              <div class="place-self-center mt-[3rem]">
+                <a href="" class="btn bg--pink">BUY NOW</a>
+              </div>
             </div>
           </div>
         </div>
@@ -677,7 +1064,7 @@
     <section class="testimonial py-[5rem]">
       <div class="container">
         <div class="testimonial__wrapper">
-          <h3 class="text-[clamp(24px,4vw,30px)] text-center mb-[3rem]">
+          <h3 data-aos="fade-down" class="text-[clamp(24px,4vw,30px)] text-center mb-[3rem]">
             Testimonial
           </h3>
           <div class="relative max-w-[20rem] mx-auto">
@@ -697,7 +1084,7 @@
                   startups. I look forward to visiting this event again next
                   year, maybe even as a speaker
                 </p>
-                <h4>Joanna Smith</h4>
+                <h5 class="text-[clamp(20px,4vw,24px)]">Joanna Smith</h5>
               </div>
             </div>
             <div class="testimonial__item">
@@ -708,7 +1095,7 @@
                   business experiences so we can learn something new and change
                   the industry for the better
                 </p>
-                <h4>James Williams</h4>
+                <h5 class="text-[clamp(20px,4vw,24px)]">James Williams</h5>
               </div>
             </div>
             <div class="testimonial__item">
@@ -719,7 +1106,7 @@
                   among executives and business leaders in this industry in the
                   eternal pursuit of maximizing customer experience.
                 </p>
-                <h4>Kate McMillan</h4>
+                <h5 class="text-[clamp(20px,4vw,24px)]">Kate McMillan</h5>
               </div>
             </div>
             <div class="testimonial__item">
@@ -730,7 +1117,7 @@
                   to really see the main trends of technological and business
                   startups.
                 </p>
-                <h4>Peter Wilson</h4>
+                <h5 class="text-[clamp(20px,4vw,24px)]">Peter Wilson</h5>
               </div>
             </div>
           </div>
@@ -755,16 +1142,16 @@
       </div>
     </section>
 
-    <section
+    <section 
       class="experience bg-graybg bg-no-repeat bg-cover w-[100%] h-[20rem] py-[5rem]"
     >
       <div class="container">
-        <div class="experience__wrapper">
+        <div data-aos="fade-down" class="experience__wrapper ">
           <h2
             class="text-[clamp(26px,4vw,35px)] text-light relative mb-[3rem] text-center"
           >
             <span
-              class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-[46%] before:top-[-1rem]"
+              class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-[50%] before:top-[-1rem]"
             ></span>
             Transform your business experience with our event!
           </h2>
@@ -776,21 +1163,485 @@
     </section>
 
     <section class="gallery">
+      <div
+        class="gallery__wrapper grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[2rem]"
+      >
+        <img data-aos="fade-down" src="./img/gallery-1-original.jpg" alt="" />
+        <img data-aos="fade-down" src="./img/gallery-2-original.jpg" alt="" />
+        <img data-aos="fade-down" src="./img/gallery-3-original.jpg" alt="" />
+        <img data-aos="fade-down" src="./img/gallery-12-original.jpg" alt="" />
+        <img data-aos="fade-down" src="./img/gallery-9-original.jpg" alt="" />
+        <img data-aos="fade-down" src="./img/gallery-13-original.jpg" alt="" />
+        <img data-aos="fade-down" src="./img/gallery-11-original.jpg" alt="" />
+        <img data-aos="fade-down" src="./img/gallery-8-original.jpg" alt="" />
+      </div>
+      <img
+        src="./img/bottomdots.png"
+        alt=""
+        class="w-full h-[8rem] object-cover"
+      />
+    </section>
+
+    <section class="latestlg py-[5rem] font-poppins lg:block hidden">
       <div class="container">
-        <div
-          class="gallery__wrapper grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[2rem]"
-        >
-          <img src="./img/gallery-1-original.jpg" alt="" />
-          <img src="./img/gallery-2-original.jpg" alt="" />
-          <img src="./img/gallery-3-original.jpg" alt="" />
-          <img src="./img/gallery-12-original.jpg" alt="" />
-          <img src="./img/gallery-9-original.jpg" alt="" />
-          <img src="./img/gallery-13-original.jpg" alt="" />
-          <img src="./img/gallery-11-original.jpg" alt="" />
-          <img src="./img/gallery-8-original.jpg" alt="" />
+        <div class="latestlg__wrapper">
+          <h2
+            class="text-[clamp(26px,4vw,35px)] text-dark relative mb-[3rem] text-center"
+          >
+            <span
+              class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-[46%] before:top-[-1rem]"
+            ></span>
+            Latest News
+          </h2>
+
+          <div class="latestlg__slider grid grid-cols-3">
+            <div class="latestlg__item">
+              <div class="max-w-[22rem] mx-auto relative">
+                <div class="inline-block overflow-hidden">
+                  <img
+                    src="./img/post-classic-1-370x255.jpg"
+                    alt=""
+                    class="hover:scale-105 hover:transition-transform hover:duration-500 hover:brightness-75"
+                  />
+                </div>
+
+                <h5
+                  class="text-[20px] font-medium my-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                >
+                  Top 8 Email Marketing Tips from Our Speakers
+                </h5>
+                <p class="text-base text-gray-500">
+                  April 25, 2021
+                  <span
+                    class="text-gpurple text-base ml-[2rem] hover:text-dilaw hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                    >Marketing</span
+                  >
+                </p>
+                <img
+                  src="./img/dot-bg-removebg-preview.png"
+                  alt=""
+                  class="w-[10rem] h-[10rem] object-cover absolute top-[20rem] right-0"
+                />
+              </div>
+            </div>
+            <div class="latestlg__item">
+              <div class="max-w-[22rem] mx-auto relative">
+                <div class="inline-block overflow-hidden">
+                  <img
+                    src="./img/post-classic-2-370x255.jpg"
+                    alt=""
+                    class="hover:scale-105 hover:transition-transform hover:duration-500 hover:brightness-75"
+                  />
+                </div>
+
+                <h5
+                  class="text-[20px] font-medium my-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                >
+                  How Your Business can Benefit from taking part in Eventy
+                </h5>
+                <p class="text-base text-gray-500">
+                  April 25, 2021
+                  <span
+                    class="text-dilaw text-base ml-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointe"
+                    >News</span
+                  >
+                </p>
+                <img
+                  src="./img/dot-bg-removebg-preview.png"
+                  alt=""
+                  class="w-[10rem] h-[10rem] object-cover absolute top-[20rem] right-0"
+                />
+              </div>
+            </div>
+            <div class="latestlg__item">
+              <div class="max-w-[22rem] mx-auto relative">
+                <div class="inline-block overflow-hidden">
+                  <img
+                    src="./img/post-classic-3-370x255.jpg"
+                    alt=""
+                    class="hover:scale-105 hover:transition-transform hover:duration-500 hover:brightness-75"
+                  />
+                </div>
+
+                <h5
+                  class="text-[20px] font-medium my-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                >
+                  10 Sales Workshops of Eventy that You Must Visit
+                </h5>
+                <p class="text-base text-gray-500">
+                  April 25, 2021
+                  <span
+                    class="text-gblue text-base ml-[2rem] hover:text-gpurple hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointe"
+                    >Sales</span
+                  >
+                </p>
+                <img
+                  src="./img/dot-bg-removebg-preview.png"
+                  alt=""
+                  class="w-[10rem] h-[10rem] object-cover absolute top-[20rem] right-0"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <section class="latestmd py-[5rem] font-poppins md:block lg:hidden hidden">
+      <div class="container">
+        <div class="latestmd__wrapper">
+          <h2
+            class="text-[clamp(26px,4vw,35px)] text-dark relative mb-[3rem] text-center"
+          >
+            <span
+              class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-[46%] before:top-[-1rem]"
+            ></span>
+            Latest News
+          </h2>
+
+          <div class="latestmd__slider">
+            <div class="latestmd__item">
+              <div class="max-w-[22rem] mx-auto relative">
+                <div class="inline-block overflow-hidden">
+                  <img
+                    src="./img/post-classic-1-370x255.jpg"
+                    alt=""
+                    class="hover:scale-105 hover:transition-transform hover:duration-500 hover:brightness-75"
+                  />
+                </div>
+
+                <h5
+                  class="text-[20px] font-medium my-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                >
+                  Top 8 Email Marketing Tips from Our Speakers
+                </h5>
+                <p class="text-base text-gray-500">
+                  April 25, 2021
+                  <span
+                    class="text-gpurple text-base ml-[2rem] hover:text-dilaw hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                    >Marketing</span
+                  >
+                </p>
+                <img
+                  src="./img/dot-bg-removebg-preview.png"
+                  alt=""
+                  class="w-[10rem] h-[10rem] object-cover absolute top-[20rem] right-0"
+                />
+              </div>
+            </div>
+            <div class="latestmd__item">
+              <div class="max-w-[22rem] mx-auto relative">
+                <div class="inline-block overflow-hidden">
+                  <img
+                    src="./img/post-classic-2-370x255.jpg"
+                    alt=""
+                    class="hover:scale-105 hover:transition-transform hover:duration-500 hover:brightness-75"
+                  />
+                </div>
+
+                <h5
+                  class="text-[20px] font-medium my-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                >
+                  How Your Business can Benefit from taking part in Eventy
+                </h5>
+                <p class="text-base text-gray-500">
+                  April 25, 2021
+                  <span
+                    class="text-dilaw text-base ml-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointe"
+                    >News</span
+                  >
+                </p>
+                <img
+                  src="./img/dot-bg-removebg-preview.png"
+                  alt=""
+                  class="w-[10rem] h-[10rem] object-cover absolute top-[20rem] right-0"
+                />
+              </div>
+            </div>
+            <div class="latestmd__item">
+              <div class="max-w-[22rem] mx-auto relative">
+                <div class="inline-block overflow-hidden">
+                  <img
+                    src="./img/post-classic-3-370x255.jpg"
+                    alt=""
+                    class="hover:scale-105 hover:transition-transform hover:duration-500 hover:brightness-75"
+                  />
+                </div>
+
+                <h5
+                  class="text-[20px] font-medium my-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                >
+                  10 Sales Workshops of Eventy that You Must Visit
+                </h5>
+                <p class="text-base text-gray-500">
+                  April 25, 2021
+                  <span
+                    class="text-gblue text-base ml-[2rem] hover:text-gpurple hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointe"
+                    >Sales</span
+                  >
+                </p>
+                <img
+                  src="./img/dot-bg-removebg-preview.png"
+                  alt=""
+                  class="w-[10rem] h-[10rem] object-cover absolute top-[20rem] right-0"
+                />
+              </div>
+            </div>
+          </div>
+
+          <ul
+            class="latestmd__nav flex flex-row justify-center gap-[1.5rem] mt-[2rem] text-gblue"
+          >
+            <li><i class="fa-regular fa-circle"></i></li>
+            <li><i class="fa-regular fa-circle"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="latest py-[5rem] font-poppins md:hidden">
+      <div class="container">
+        <div class="latest__wrapper">
+          <h2
+            class="text-[clamp(26px,4vw,35px)] text-dark relative mb-[3rem] text-center"
+          >
+            <span
+              class="before:content-[''] before:inline-block before:w-[2rem] before:h-[0.2rem] before:bg-gblue before:absolute before:left-[46%] before:top-[-1rem]"
+            ></span>
+            Latest News
+          </h2>
+
+          <div class="latest__slider">
+            <div class="latest__item">
+              <div class="max-w-[22rem] mx-auto relative">
+                <div class="inline-block overflow-hidden">
+                  <img
+                    src="./img/post-classic-1-370x255.jpg"
+                    alt=""
+                    class="hover:scale-105 hover:transition-transform hover:duration-500 hover:brightness-75"
+                  />
+                </div>
+
+                <h5
+                  class="text-[20px] font-medium my-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                >
+                  Top 8 Email Marketing Tips from Our Speakers
+                </h5>
+                <p class="text-base text-gray-500">
+                  April 25, 2021
+                  <span
+                    class="text-gpurple text-base ml-[2rem] hover:text-dilaw hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                    >Marketing</span
+                  >
+                </p>
+                <img
+                  src="./img/dot-bg-removebg-preview.png"
+                  alt=""
+                  class="w-[10rem] h-[10rem] object-cover absolute top-[20rem] right-0"
+                />
+              </div>
+            </div>
+            <div class="latest__item">
+              <div class="max-w-[22rem] mx-auto relative">
+                <div class="inline-block overflow-hidden">
+                  <img
+                    src="./img/post-classic-2-370x255.jpg"
+                    alt=""
+                    class="hover:scale-105 hover:transition-transform hover:duration-500 hover:brightness-75"
+                  />
+                </div>
+
+                <h5
+                  class="text-[20px] font-medium my-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                >
+                  How Your Business can Benefit from taking part in Eventy
+                </h5>
+                <p class="text-base text-gray-500">
+                  April 25, 2021
+                  <span
+                    class="text-dilaw text-base ml-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointe"
+                    >News</span
+                  >
+                </p>
+                <img
+                  src="./img/dot-bg-removebg-preview.png"
+                  alt=""
+                  class="w-[10rem] h-[10rem] object-cover absolute top-[20rem] right-0"
+                />
+              </div>
+            </div>
+            <div class="latest__item">
+              <div class="max-w-[22rem] mx-auto relative">
+                <div class="inline-block overflow-hidden">
+                  <img
+                    src="./img/post-classic-3-370x255.jpg"
+                    alt=""
+                    class="hover:scale-105 hover:transition-transform hover:duration-500 hover:brightness-75"
+                  />
+                </div>
+
+                <h5
+                  class="text-[20px] font-medium my-[2rem] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer"
+                >
+                  10 Sales Workshops of Eventy that You Must Visit
+                </h5>
+                <p class="text-base text-gray-500">
+                  April 25, 2021
+                  <span
+                    class="text-gblue text-base ml-[2rem] hover:text-gpurple hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointe"
+                    >Sales</span
+                  >
+                </p>
+                <img
+                  src="./img/dot-bg-removebg-preview.png"
+                  alt=""
+                  class="w-[10rem] h-[10rem] object-cover absolute top-[20rem] right-0"
+                />
+              </div>
+            </div>
+          </div>
+
+          <ul
+            class="latest__nav flex flex-row justify-center gap-[1.5rem] mt-[2rem] text-gblue"
+          >
+            <li><i class="fa-regular fa-circle"></i></li>
+            <li><i class="fa-regular fa-circle"></i></li>
+            <li><i class="fa-regular fa-circle"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="promote bg-primary py-[5rem]">
+      <div class="container">
+        <div
+          class="promote__wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]"
+        >
+          <div
+            class="promote__item text-center text-light md:flex md:items-center md:text-start md:gap-[2rem]"
+          >
+            <span
+              class="text-transparent text-[70px] font-extrabold bg-clip-text bg-gradient-to-r from-gpurple to-gblue"
+              ><i class="fa-regular fa-lightbulb"></i
+            ></span>
+            <div>
+              <h4
+                class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-medium"
+              >
+                Strong Community
+              </h4>
+              <p class="text-base">Supportive and Friendly</p>
+            </div>
+          </div>
+          <div
+            class="promote__item text-center text-light md:flex md:items-center md:text-start md:gap-[2rem]"
+          >
+            <span
+              class="text-transparent text-[70px] font-extrabold bg-clip-text bg-gradient-to-r from-gpink to-dilaw"
+              ><i class="fa-solid fa-bullseye"></i
+            ></span>
+            <div>
+              <h4
+                class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-medium"
+              >
+                Best Location
+              </h4>
+              <p class="text-base">Easy to Reach</p>
+            </div>
+          </div>
+          <div
+            class="promote__item text-center text-light md:flex md:items-center md:text-start md:gap-[2rem]"
+          >
+            <span
+              class="text-transparent text-[70px] font-extrabold bg-clip-text bg-gradient-to-r from-dilaw to-gpurple"
+              ><i class="fa-solid fa-mug-hot"></i
+            ></span>
+            <div>
+              <h4
+                class="text-[clamp(24px,4vw,28px)] hover:text-gblue hover:duration-700 hover:ease-in-out hover:transition-all hover:cursor-pointer font-medium"
+              >
+                Free Coffee Break
+              </h4>
+              <p class="text-base">Included with Basic Pass</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-fgray text-light font-poppins">
+      <div
+        class="footer__wrapper lg:grid lg:grid-cols-[_1fr,_2fr] lg:gap-[3rem]"
+      >
+        <div class="footer__maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d49349356.72871029!2d-39.40305123506548!3d40.98048015128821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1746437526651!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full brightness-50"
+          ></iframe>
+        </div>
+        <div
+          class="md:grid md:grid-cols-[_1fr,_4fr] lg:flex lg:flex-row-reverse"
+        >
+          <div
+            class="footer__social pt-[3rem] lg:pt-[0rem] max-w-[80rem] w-full m-auto px-[1.5rem]"
+          >
+            <h5 class="text-[20px] mb-[1rem]">SHARE</h5>
+            <ul class="footer__icons md:flex md:flex-col">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div data-aos="fade-left"
+            class="footer__location pt-[3rem] lg:pt-[0rem] max-w-[80rem] w-full m-auto px-[1.5rem]"
+          >
+            <h5 class="text-[20px] mb-[1rem]">OUR LOCATION</h5>
+            <p class="text-base">
+              51 Francis Street, Darlinghurst NSW 2010, United States
+            </p>
+            <p class="text-base">
+              <span class="text-gblue">Ph.</span> +2545-8546-444555
+            </p>
+            <div class="md:grid md:grid-cols-[_2fr,_1fr] md:gap-[1rem]">
+              <div class="relative mt-[1.5rem]">
+                <form action="">
+                  <input
+                    type="text"
+                    placeholder="E-mail"
+                    class="bg-bgray text-light py-[1rem] px-[1rem] border-[1px] border-red-600 rounded-md outline-none w-full"
+                  />
+                </form>
+                <small class="text-[10px] absolute top-0 right-[0.5rem]"
+                  >The text field is required.</small
+                >
+              </div>
+              <div class="mt-[1.5rem]">
+                <a href="" class="btn bg--asul !block text-center font-semibold"
+                  >SUBCRIBE</a
+                >
+              </div>
+            </div>
+
+            <div class="mt-[1.5rem] text-gray-400">
+              <small
+                >&copy;2025 Eventy. All Rights Reserved. Privacy Policy</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="module">
       //   import { tns } from "./src/tiny-slider.js";
@@ -815,6 +1666,28 @@
         controlsContainer: ".testimonial__slider--control",
         navAsThumbnails: true,
       });
+      var slider = tns({
+        container: ".latestmd__slider",
+        items: 2,
+        slideBy: "page",
+        autoplay: false,
+        controls: 0,
+        autoplayButtonOutput: 0,
+        navContainer: ".latestmd__nav",
+      });
+      var slider = tns({
+        container: ".latest__slider",
+        items: 1,
+        slideBy: "page",
+        autoplay: false,
+        controls: 0,
+        autoplayButtonOutput: 0,
+        navContainer: ".latest__nav",
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
     <script src="./script.js"></script>
   </body>

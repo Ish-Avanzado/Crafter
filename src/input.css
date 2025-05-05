@@ -41,7 +41,7 @@
     @apply hidden lg:flex lg:justify-between lg:gap-[2rem];
   }
   .header .header__navm {
-    @apply lg:hidden bg-primary absolute top-[4.7rem] h-[100rem] left-[-100rem] w-[50%] flex flex-col gap-[1rem] font-light text-tgray pl-[1.5rem]  py-[2rem];
+    @apply lg:hidden bg-primary absolute top-[4.7rem] h-[100rem] left-[-100rem] w-[50%] flex flex-col gap-[1rem] font-light text-tgray pl-[1.5rem]  py-[2rem] transition-all duration-700 ease-in-out;
   }
   .header .header__navm.open {
     @apply left-0 transition-all duration-700 ease-in-out;
@@ -117,16 +117,16 @@
   }
   /* testimonial */
   .testimonial__item {
-    @apply text-gray-500 ;
+    @apply text-gray-500;
   }
   .testimonial__card {
     @apply md:max-w-[45rem] max-w-[20rem] mx-auto  bg-transparent;
   }
   .testimonial__item p,
-  .testimonial__item h4 {
+  .testimonial__item h5 {
     @apply text-center;
   }
-  .testimonial__item h4 {
+  .testimonial__item h5 {
     @apply text-gpurple mt-[1rem];
   }
   .testimonial__slider--nav img {
@@ -137,15 +137,35 @@
   }
 
   /* sched */
-
+  .sched__nav {
+    @apply text-gray-500
+  }
+  .sched__nav.active {
+    @apply text-light
+  }
   
+.sched__item {
+  @apply opacity-0 max-h-[0rem] transition-all
+}
+.sched__item.active {
+  @apply opacity-100 max-h-[100rem] transition-all
+}
+  /* footer */
+
+  .footer__icons {
+    @apply flex flex-row gap-[1rem];
+  }
+  .footer__icons li {
+    @apply text-[20px] py-[0.5rem] px-[1.5rem] bg-bgray  w-10 rounded-full flex justify-center hover:bg-gblue hover:transition-all hover:duration-700 hover:ease-in-out;
+  }
+
 }
 @layer utilities {
   .btn {
     @apply inline-block text-light bg-transparent px-[2rem] py-[1rem];
   }
   .btn.bg--dilaw {
-    @apply bg-dilaw rounded-sm px-[1.5rem] py-[0.5rem];
+    @apply bg-dilaw rounded-sm px-[1.5rem] py-[0.5rem] hover:bg-dark hover:transition-all hover:duration-300 hover:ease-in-out;
   }
   .btn.bg--asul {
     @apply bg-gradient-to-r from-gpurple to-gblue rounded-md hover:bg-gradient-to-r hover:from-gblue hover:to-gpurple;

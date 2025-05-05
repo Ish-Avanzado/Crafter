@@ -22,6 +22,8 @@ module.exports = {
         dilaw: "#ffd541",
         bggray: "#f5f5f5",
         tgray: "#b8b8b8",
+        bgray: "#505050",
+        fgray:"#3c3c3c",
         gpink: "#f85293",
         gorange: "#fc9867",
         gpurple: "#535ddf",

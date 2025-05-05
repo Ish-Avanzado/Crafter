@@ -22,7 +22,7 @@ const Hours = document.getElementById("hours");
 const Minutes = document.getElementById("minutes");
 const Seconds = document.getElementById("seconds");
 
-const targetDate = new Date("June 13 2025 00:00:00").getTime();
+const targetDate = new Date("June 18 2025 00:00:00").getTime();
 
 function timer() {
   const currentDate = new Date().getTime();
@@ -49,3 +49,31 @@ function timer() {
 }
 
 setInterval(timer, 1000);
+
+//  Sched Tabs
+const schedNav = document.querySelectorAll(".sched__nav");
+const schedItem = document.querySelectorAll(".sched__item");
+
+schedNav.forEach((schedN) => {
+  schedN.addEventListener("click", () => {
+    removeActiveFaqN();
+    schedN.classList.add("active");
+
+    const activeItem = document.querySelector(`#${schedN.id}-content`);
+    removeActiveContent();
+    activeItem.classList.add("active");
+  });
+});
+
+function removeActiveFaqN() {
+  schedNav.forEach((schedN) => {
+    schedN.classList.remove("active");
+  });
+}
+
+function removeActiveContent() {
+  schedItem.forEach((content) => {
+    content.classList.remove("active"); 
+  });
+}
+
